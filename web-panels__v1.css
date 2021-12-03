@@ -1,0 +1,37 @@
+.panelbtn.history {
+    margin-bottom: 10px;
+    /* adds a spacing to the other web panels */
+}
+.panelbtn.history+.panelbtn[title*="empty"] {
+    display: none !important;
+}
+.panelbtn[title*="empty"] {
+    height: 1px !important;
+    margin: 3px 0;
+}
+.panelbtn[title*="empty"] img {
+    height: 1px !important;
+    background-color: gray !important;
+}
+.panelbtn[title*="empty"]:hover {
+    background-color: unset !important;
+}
+.panelbtn[title*="spotify"], .panelbtn[title*="youtube"], .panelbtn[title*="radiobob"], .panelbtn[title*="We aRe oNe"] {
+    position: absolute !important;
+    bottom: 30px;
+}
+.panelbtn img {
+    height: 21px !important;
+    width: 21px !important;
+    background-color: unset !important;
+}
+.panelbtn[title*="Ext JS"] img {
+    content: url('https://docs.sencha.com/favicon.ico');
+}
+.webpanel {
+    background-color: var(--colorBorder);
+}
+.webpanel-header {
+    border-top: 1px solid var(--colorBgDark);
+    border-bottom: unset !important;
+}

@@ -1,0 +1,11 @@
+.synced-tabs-button {
+  display: none !important; /* Hide the cloud icon (synced tabs) */
+}
+
+.toggle-trash {
+  display: none !important; /* Hide the trashbin icon (closed tabs) */
+}
+
+.profile-popup {
+	display: none !important; /* Hide the profile icon */
+}

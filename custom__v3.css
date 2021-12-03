@@ -1,0 +1,23 @@
+.bookmark-bar-top .bookmark-bar {
+    border-bottom-width: 0px;
+    /* removes 1px line between bookmark-bar and switch (container for panels) */
+}
+body, #main>.inner {
+    /* background-color: #2b373d */
+    /* replaces the plane white page when opening a new page with a darker one */
+}
+.button-toolbar>button {
+    border-radius: var(--radius) !important;
+    /* adaptes the border of the toolbar buttons to the selected theme */
+}
+.toolbar-insideinput>.pageload>div {
+    display: none;
+    /* hides the loading progress */
+}
+.tab.active .tab-header .favicon {
+    filter: none;
+    /* removes highlighting from selected tab (https://forum.vivaldi.net/topic/49073/how-do-i-turn-off-the-highlighting-on-the-icon-of-the-current-tab) */
+}
+.bookmark-bar button:hover {
+    border-radius: 10px;
+}

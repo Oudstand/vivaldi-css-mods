@@ -1,0 +1,16 @@
+.toolbar-mainbar.toolbar-wrap {
+    /* makes the extensions popup look better */
+    top: 0px !important;
+    border-radius: 10px;
+    position: absolute !important;
+}
+.toolbar-mainbar.toolbar-wrap .button-toolbar {
+    align-self: baseline;
+}
+.toolbar-mainbar.toolbar-wrap .button-toolbar>button {
+    border-radius: 10px !important;
+}
+button[title="Speed Dial Generator"], button[title="Modern scrollbar"], button[title="Charcoal: Dark Mode for Messenger"], button[title="Cookie Notice Blocker"] {
+    /* hides the extensions of the given title */
+    display: none !important;
+}

@@ -1,0 +1,36 @@
+/* Hide thumbnail imagesfor Snapshot5.0.2497.18 */
+
+/* author @shifte @Hababr @dude99 */
+
+#vivaldi-tooltip .tooltip .tooltip-item {
+    width: 280px !important;
+    height: auto !important;
+}
+#vivaldi-tooltip .tooltip .thumbnail-image {
+    display: none !important;
+}
+.tabs-left #vivaldi-tooltip .tooltip {
+    margin-left: -180px!important;
+}
+.tabs-right #vivaldi-tooltip .tooltip {
+    margin-left: 180px;
+}
+#vivaldi-tooltip .tooltip .tooltip-item .thumbnail-text {
+    order: 1!important;
+}
+/* Hide thumbnail on single tab
+#vivaldi-tooltip .tooltip .tab-solo .tooltip-item {
+ display: none;}
+*/
+
+/* Change thumbnail color on hover
+#vivaldi-tooltip .tooltip .tab-group .tooltip-item:hover { 
+ background-color:#ccccff;
+}
+*/
+
+/* Hide domain
+#vivaldi-tooltip .tooltip .tooltip-item .thumbnail-text .url {
+ display:none ;
+}
+*/
