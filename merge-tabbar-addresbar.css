@@ -114,7 +114,7 @@
 /* move button for update to the right position */
 button[title="Aktualisierung Bereit"] {
     top: 47px;
-    right: calc(-100vw + 50px);
+    right: calc(-100vw + 80px);
     position: absolute;
     height: 20px !important;
     /* shows the update button on a better readable position */
