@@ -26,7 +26,7 @@
 :root {
     --space-from-left: 46.5em;
     /* Main toolbar space - adjust according to your buttonset */
-    --space-from-right: 16em;
+    --space-from-right: 14em;
     /* Extension toolbar space - adjust according to your tab bar buttons (cloud, trashbin, ...) */
 }
 .UrlBar {
