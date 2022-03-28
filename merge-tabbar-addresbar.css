@@ -60,9 +60,11 @@
     top: 0px !important;
 }
 .toolbar-extensions {
-    position: absolute;
+    position: absolute !important;
+    left: unset !important;
     top: 4px !important;
     right: calc(var(--space-from-right) - 100vw) !important;
+    background-color: var(--colorBg) !important;
 }
 .toolbar-extensions .button-toolbar {
     margin-top: 3px;
@@ -112,6 +114,7 @@
     height: 39px;
 }
 /* move button for update to the right position */
+
 button[title="Aktualisierung Bereit"] {
     top: 47px;
     right: calc(-100vw + 80px);
