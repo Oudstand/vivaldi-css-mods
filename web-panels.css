@@ -25,13 +25,14 @@
     width: 21px !important;
     background-color: unset !important;
 }
-.panelbtn[title*="Ext JS"] img {
-    content: url('https://docs.sencha.com/favicon.ico');
-}
 .webpanel {
     background-color: var(--colorBorder);
 }
 .webpanel-header {
     border-top: 1px solid var(--colorBgDark);
     border-bottom: unset !important;
+}
+
+#panels-container.overlay {
+    position: relative;
 }
