@@ -40,7 +40,6 @@ span > .tab-position > .tab:not(.tab-mini):not(.active):hover::after {
 	min-height: 35px;
 }
 .tab-position .tab .tab-header {
-	flex: 0 0 35px;
 	align-items: center;
 }
 .tab-position .tab .thumbnail-image {

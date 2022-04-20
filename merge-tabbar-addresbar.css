@@ -86,7 +86,7 @@
     top: 8px;
 }
 .maximized .vivaldi {
-    top: -2px;
+    top: -10px;
 }
 .vivaldi {
     top: -7px;
@@ -98,7 +98,6 @@
 }
 #tabs-container {
     min-height: unset;
-    margin-top: -3px;
 }
 .button-toolbar.newtab {
     margin-top: -3px !important;
