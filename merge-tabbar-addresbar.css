@@ -50,6 +50,7 @@
 #tabs-container {
     padding-left: calc(26vw + 140px) !important;
     /* Make sure overlays work */
+    margin-top: -4px;
 }
 .toolbar-mainbar, .toolbar-mainbar {
     background-color: var(--colorBg) !important;
@@ -91,13 +92,6 @@
 .vivaldi {
     top: -7px;
     left: 5px;
-}
-.maximized #tabs-container {
-    min-height: 35px;
-    margin-top: 0;
-}
-#tabs-container {
-    min-height: unset;
 }
 .button-toolbar.newtab {
     margin-top: -3px !important;
