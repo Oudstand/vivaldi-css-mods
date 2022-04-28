@@ -33,7 +33,10 @@
     margin-left: 35px;
 }
 .toolbar-mainbar {
-    top: -0.2em !important;
+    top: -0.55em !important;
+}
+.maximized .toolbar-mainbar {
+    top: -0.3em !important;
 }
 .UrlBar.toolbar {
     position: absolute;
@@ -46,68 +49,67 @@
     width: 25vw !important;
     /* Set a fixed width for address bar */
     left: 110px;
+    margin-top: 12px;
+}
+.maximized .UrlBar-AddressField {
+    margin-top: 5px;
 }
 #tabs-container {
     padding-left: calc(26vw + 140px) !important;
     /* Make sure overlays work */
-    margin-top: -4px;
+    margin-top: -5px;
 }
-.toolbar-mainbar, .toolbar-mainbar {
+.maximized #tabs-container {
+    margin-top: 0;
+}
+.toolbar-mainbar {
     background-color: var(--colorBg) !important;
     /* Append the background color */
     height: 38px;
 }
-.maximized .toolbar-extensions {
-    top: 0px !important;
-}
 .toolbar-extensions {
     position: absolute !important;
     left: unset !important;
-    top: 4px !important;
+    top: 1px !important;
     right: calc(var(--space-from-right) - 100vw) !important;
     background-color: var(--colorBg) !important;
 }
 .toolbar-extensions .button-toolbar {
-    margin-top: 3px;
+    margin-top: 7px;
 }
 .toolbar-mainbar:after, .toolbar-mainbar:after, .toolbar-extensions:after, .toolbar-tabbar:after {
     display: none !important;
     /* Remove a weird white line below the toolbar */
 }
-.maximized .UrlBar-AddressField {
-    margin-top: 1.5px;
-}
-.UrlBar-AddressField {
-    margin-top: 12px;
-}
-.maximized .toolbar-droptarget>.button-toolbar {
-    top: 4px;
+.maximized .toolbar-extensions {
+    top: -2px !important;
 }
 .toolbar-droptarget>.button-toolbar {
     top: 8px;
 }
-.maximized .vivaldi {
-    top: -10px;
+.maximized .toolbar-droptarget>.button-toolbar {
+    top: 4px;
 }
 .vivaldi {
-    top: -7px;
+    top: -10px;
     left: 5px;
 }
+.maximized .vivaldi {
+    top: -3px;
+}
 .button-toolbar.newtab {
+    margin-top: -5px !important;
+}
+.maximized .button-toolbar.newtab {
     margin-top: -3px !important;
 }
 .popup .toolbar-mainbar {
     visibility: hidden;
     /* hides the toolbar for apps */
 }
-.maximized #header {
+#header {
     height: 35px;
 }
-#header {
-    height: 39px;
-}
-/* move button for update to the right position */
-
 button[title="Aktualisierung Bereit"] {
     top: 47px;
     right: calc(-100vw + 80px);
@@ -117,4 +119,16 @@ button[title="Aktualisierung Bereit"] {
 }
 .bookmark-bar button:hover {
     border-radius: 10px;
+}
+.window-buttongroup{
+   top: -3px !important;
+}
+.maximized .window-buttongroup{
+   top: 2px !important;
+}
+.tab-header {
+   top: -3px;
+}
+.maximized .tab-header {
+   top: 0;
 }
