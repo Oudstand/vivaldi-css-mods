@@ -1,134 +1,66 @@
-/* 
-  https://forum.vivaldi.net/topic/34187/merge-tabs-and-address-bar?_=1593593936120
+#tabs-container {
+    position: fixed;
+    left: calc(26vw + 140px) !important;
+    right: 0;      
+}
 
-   One-line UI for Vivaldi 2.8+
+.win.normal #tabs-container{
+    margin-top: -10px !important;
+    margin-right: 50px;
+}
 
-   Before using this style, please 
-   * remove the search bar (or adjust space-from-left below)
-   * disable extension toggle button, profile switch button and menu bar
-   * adjust the current theme to apply accent color to window (not toolbar)
-   * make sure you've enabled the Alt key to open menu (keyboard settings)
-   Otherwise you'll have to modify the style further to suit your usage.
+.tab-group-indicator {
+    top: 0 !important;
+}
 
-   The style is meant to be used primarily in a window, 
-   on restored windows it may not look as good. 
+.win.normal #titlebar {
+    top: -5px;
+}
 
-   Inspired by https://forum.vivaldi.net/topic/13042/one-line-ui-help-wanted
-*/
+.UrlBar-AddressField {
+    width: 27vw !important;
+}
+
+.win.normal .UrlBar-AddressField {
+    top: 1px;
+}
+
+.toolbar-mainbar:not(.toolbar-wrap) {
+    position: absolute;
+    top: 0;
+    left: 30px !important;
+    height: 30px;
+    background: var(--colorBg) !important;
+}
+
+.toolbar-mainbar {
+     background: var(--colorBg) !important;
+}
 
 .win.normal .toolbar-mainbar {
     left: unset;
     right: unset;
 }
-#main {
-    position: unset;
-}
-:root {
-    --space-from-left: 46.5em;
-    /* Main toolbar space - adjust according to your buttonset */
-    --space-from-right: 14em;
-    /* Extension toolbar space - adjust according to your tab bar buttons (cloud, trashbin, ...) */
-}
-.UrlBar {
-    margin-left: 35px;
-}
-.toolbar-mainbar {
-    top: -0.55em !important;
-}
-.maximized .toolbar-mainbar {
-    top: -0.3em !important;
-}
-.UrlBar.toolbar {
-    position: absolute;
-}
-.UrlBar .toolbar-droptarget {
-    position: fixed;
-}
-.UrlBar-AddressField {
-    position: absolute;
-    width: 25vw !important;
-    /* Set a fixed width for address bar */
-    left: 110px;
-    margin-top: 12px;
-}
-.maximized .UrlBar-AddressField {
-    margin-top: 5px;
-}
-#tabs-container {
-    padding-left: calc(26vw + 140px) !important;
-    /* Make sure overlays work */
-    margin-top: -5px;
-}
-.maximized #tabs-container {
-    margin-top: 0;
-}
-.toolbar-mainbar {
-    background-color: var(--colorBg) !important;
-    /* Append the background color */
-    height: 38px;
-}
+
 .toolbar-extensions {
     position: absolute !important;
-    left: unset !important;
-    top: 1px !important;
-    right: calc(var(--space-from-right) - 100vw) !important;
+    transform: translate(-100%, 0);
     background-color: var(--colorBg) !important;
+    left: calc(100vw - 230px) !important;  
 }
-.toolbar-extensions .button-toolbar {
-    margin-top: 7px;
+
+.maximized .toolbar-extensions{
+    left: calc(100vw - 160px) !important;    
 }
-.toolbar-mainbar:after, .toolbar-mainbar:after, .toolbar-extensions:after, .toolbar-tabbar:after {
-    display: none !important;
-    /* Remove a weird white line below the toolbar */
-}
-.maximized .toolbar-extensions {
-    top: -2px !important;
-}
-.toolbar-droptarget>.button-toolbar {
-    top: 8px;
-}
-.maximized .toolbar-droptarget>.button-toolbar {
-    top: 4px;
-}
+
 .vivaldi {
-    top: -10px;
-    left: 5px;
+    margin-top: 1px !important;
 }
-.maximized .vivaldi {
-    top: -3px;
+
+#header, #main {
+    position: unset;
 }
-.button-toolbar.newtab {
-    margin-top: -5px !important;
-}
-.maximized .button-toolbar.newtab {
-    margin-top: -3px !important;
-}
-.popup .toolbar-mainbar {
-    visibility: hidden;
-    /* hides the toolbar for apps */
-}
+
 #header {
-    height: 35px;
-}
-button[title="Aktualisierung Bereit"] {
-    top: 47px;
-    right: calc(-100vw + 80px);
-    position: absolute;
-    height: 20px !important;
-    /* shows the update button on a better readable position */
-}
-.bookmark-bar button:hover {
-    border-radius: 10px;
-}
-.window-buttongroup{
-   top: -3px !important;
-}
-.maximized .window-buttongroup{
-   top: 2px !important;
-}
-.tab-header {
-   top: -3px;
-}
-.maximized .tab-header {
-   top: 0;
+    height: 30px;
 }
