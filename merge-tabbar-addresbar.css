@@ -19,6 +19,7 @@
 
 .UrlBar-AddressField {
     width: 27vw !important;
+    top: 1px !important;
 }
 
 .win.normal .UrlBar-AddressField {
@@ -27,7 +28,7 @@
 
 .toolbar-mainbar:not(.toolbar-wrap) {
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 30px !important;
     height: 30px;
     background: var(--colorBg) !important;
