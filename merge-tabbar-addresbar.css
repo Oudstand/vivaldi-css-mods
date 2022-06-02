@@ -6,7 +6,7 @@
 
 .win.normal #tabs-container{
     margin-top: -10px !important;
-    margin-right: 50px;
+    margin-right: -20px !important;
 }
 
 .tab-group-indicator {
@@ -45,10 +45,15 @@
 
 .toolbar-extensions {
     position: absolute !important;
-    transform: translate(-100%, 0);
+    transform: translate(-100%);
     background-color: var(--colorBg) !important;
-    left: calc(100vw - 230px) !important;  
-    right: 0;
+    left: calc(100vw - 160px) !important;
+    height: 30px !important;
+    right: unset !important;
+}
+
+.toolbar-extensions:after {
+    content: none !important;
 }
 
 .vivaldi {
