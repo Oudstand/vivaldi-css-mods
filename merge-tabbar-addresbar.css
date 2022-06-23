@@ -19,16 +19,11 @@
 
 .UrlBar-AddressField {
     width: 27vw !important;
-    top: 1px !important;
-}
-
-.win.normal .UrlBar-AddressField {
-    top: 1px;
 }
 
 .toolbar-mainbar:not(.toolbar-wrap) {
     position: absolute;
-    top: -1px;
+    top: 0;
     left: 30px !important;
     height: 30px;
     background: var(--colorBg) !important;
@@ -57,7 +52,7 @@
 }
 
 .vivaldi {
-    margin-top: 1px !important;
+    margin-top: 0 !important;
 }
 
 #header, #main {
