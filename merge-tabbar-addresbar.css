@@ -58,7 +58,8 @@
 button[name="UpdateButton"] {
     position: fixed;
     right: 0;
-    top:28px; 
+    top: 32px; 
+    height: 25px;
 }
 
 #header, #main {
