@@ -55,6 +55,12 @@
     margin-top: 0 !important;
 }
 
+button[name="UpdateButton"] {
+    position: fixed;
+    right: 0;
+    top:28px; 
+}
+
 #header, #main {
     position: unset;
 }
