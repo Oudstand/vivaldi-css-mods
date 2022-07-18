@@ -33,6 +33,10 @@
      background: var(--colorBg) !important;
 }
 
+.toolbar-mainbar::before, .toolbar-extensions::before {
+    display:none;
+}
+
 .win.normal .toolbar-mainbar {
     left: unset;
     right: unset;
@@ -42,7 +46,7 @@
     position: absolute !important;
     transform: translate(-100%);
     background-color: var(--colorBg) !important;
-    left: calc(100vw - 160px) !important;
+    left: calc(100vw - 165px) !important;
     height: 30px !important;
     right: unset !important;
 }
@@ -60,6 +64,11 @@ button[name="UpdateButton"] {
     right: 0;
     top: 32px; 
     height: 25px;
+}
+
+/* use correct accent color */
+.bookmark-bar, .bookmarkbarItem, .tab.active {
+    background-color: var(--colorAccentBgDark) !important;
 }
 
 #header, #main {
