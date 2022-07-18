@@ -26,3 +26,7 @@ body, #main>.inner {
 .bookmark-bar, .bookmarkbarItem, .tab.active {
     background-color: var(--colorAccentBgDark) !important;
 }
+
+.bookmarkbarItem.highlighted {
+    background-color: var(--colorAccentBgDarker) !important;
+}
