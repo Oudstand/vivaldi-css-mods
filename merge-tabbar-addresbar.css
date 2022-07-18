@@ -66,11 +66,6 @@ button[name="UpdateButton"] {
     height: 25px;
 }
 
-/* use correct accent color */
-.bookmark-bar, .bookmarkbarItem, .tab.active {
-    background-color: var(--colorAccentBgDark) !important;
-}
-
 #header, #main {
     position: unset;
 }
