@@ -23,10 +23,6 @@ body, #main>.inner {
 }
 
 /* use correct accent color */
-.bookmark-bar, .bookmarkbarItem, .tab.active, .tab-indicator.active {
-    background-color: var(--colorAccentBgDark) !important;
-}
-
-.bookmarkbarItem.highlighted {
-    background-color: var(--colorAccentBgDarker) !important;
+.tab-indicator.active {
+    background-color: var(--colorAccentBg) !important;
 }
