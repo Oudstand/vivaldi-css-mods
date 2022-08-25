@@ -7,6 +7,3 @@
 .tabs-at-edge .vivaldi {
     margin-top: 5px;
 }
-#browser.win.win10.tabs-top #header #titlebar .window-buttongroup button:not(.vivaldi) {
-	height: 41px;
-}

@@ -59,6 +59,10 @@
     margin-top: 0 !important;
 }
 
+#browser.win.win10.tabs-top #header #titlebar .window-buttongroup button:not(.vivaldi) {
+    height: 35px;
+}
+
 button[name="UpdateButton"] {
     position: fixed;
     right: 0;
