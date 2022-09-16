@@ -2,10 +2,10 @@
     position: fixed;
     left: calc(26vw + 140px) !important;
     right: 0;      
+    top: 0;
 }
 
 .win.normal #tabs-container{
-    margin-top: -10px !important;
     margin-right: -20px !important;
 }
 
@@ -51,23 +51,15 @@
     right: unset !important;
 }
 
-.toolbar-extensions:after {
-    content: none !important;
-}
-
-.vivaldi {
-    margin-top: 0 !important;
-}
-
-#browser.win.win10.tabs-top #header #titlebar .window-buttongroup button:not(.vivaldi) {
-    height: 35px;
-}
-
 button[name="UpdateButton"] {
     position: fixed;
     right: 0;
     top: 32px; 
     height: 25px !important;
+}
+
+.window-buttongroup{
+    height:35px;
 }
 
 #header, #main {

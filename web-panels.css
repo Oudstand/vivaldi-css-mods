@@ -20,19 +20,9 @@
     position: absolute !important;
     bottom: 30px;
 }
-.panelbtn img {
-    height: 21px !important;
-    width: 21px !important;
-    background-color: unset !important;
-}
 .webpanel {
     background-color: var(--colorBorder);
 }
 .webpanel-header {
-    border-top: 1px solid var(--colorBgDark);
     border-bottom: unset !important;
-}
-
-#panels-container.overlay {
-    position: relative;
 }

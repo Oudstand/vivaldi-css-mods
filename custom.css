@@ -1,10 +1,7 @@
 .bookmark-bar-top .bookmark-bar {
-    border-bottom-width: 0px;
+    border: none;
+    align-items: baseline;
     /* removes 1px line between bookmark-bar and switch (container for panels) */
-}
-body, #main>.inner {
-    /* background-color: #2b373d */
-    /* replaces the plane white page when opening a new page with a darker one */
 }
 .button-toolbar>button {
     border-radius: var(--radius) !important;
@@ -14,10 +11,6 @@ body, #main>.inner {
     display: none;
     /* hides the loading progress */
 }
-.tab.active .tab-header .favicon {
-    filter: none;
-    /* removes highlighting from selected tab (https://forum.vivaldi.net/topic/49073/how-do-i-turn-off-the-highlighting-on-the-icon-of-the-current-tab) */
-}
 .bookmark-bar button:hover {
     border-radius: 10px;
 }
@@ -25,4 +18,31 @@ body, #main>.inner {
 /* use correct accent color */
 .tab-indicator.active {
     background-color: var(--colorAccentBg) !important;
+}
+
+.tab.active {
+    font-weight: bold;
+}
+
+#switch {
+    background-color: var(--colorBorder);
+}
+
+.tab .close {
+    border-radius: 100%;
+    background-color: transparent;
+}
+.tab .close:hover {
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.button-toolbar.newtab > button, .button-toolbar.newtab > button:hover {
+    -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg width='26' height='26' version='1.1' viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg' xmlns:cc='http://creativecommons.org/ns%23' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Cmetadata%3E%3Crdf:RDF%3E%3Ccc:Work rdf:about=''%3E%3Cdc:format%3Eimage/svg+xml%3C/dc:format%3E%3Cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage'/%3E%3Cdc:title/%3E%3C/cc:Work%3E%3C/rdf:RDF%3E%3C/metadata%3E%3Cpath d='m13 5a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8zm-1 3h2v4h4v2h-4v4h-2v-4h-4v-2h4v-4z' style='paint-order:stroke fill markers'/%3E%3C/svg%3E");
+    -webkit-mask-position: 50% 50%;
+    /* custom new tab icon */
+}
+
+span > .tab-position > .tab:not(.tab-mini):not(.active):hover {
+    background-color: var(--colorHighlightFgAlphaHeavy) !important;
 }
