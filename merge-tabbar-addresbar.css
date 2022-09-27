@@ -1,16 +1,16 @@
 #tabs-container {
     position: fixed;
-    left: calc(26vw + 140px) !important;
+    left: calc(26vw + 140px);
     right: 0;      
     top: 0;
 }
 
 .win.normal #tabs-container{
-    margin-right: -20px !important;
+    margin-right: -20px;
 }
 
-.tab-group-indicator {
-    top: 0 !important;
+.win.normal .tab-group-indicator {
+    top: -2px;
 }
 
 .win.normal #titlebar {
@@ -18,7 +18,7 @@
 }
 
 .UrlBar-AddressField {
-    width: 27vw !important;
+    width: 27vw;
 }
 
 .toolbar-mainbar:not(.toolbar-wrap) {
@@ -26,7 +26,6 @@
     top: 0;
     left: 30px !important;
     height: 30px;
-    background: var(--colorBg) !important;
 }
 
 .toolbar-mainbar {
