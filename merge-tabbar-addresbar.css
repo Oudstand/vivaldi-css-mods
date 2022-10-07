@@ -3,10 +3,7 @@
     left: calc(26vw + 140px);
     right: 0;      
     top: 0;
-}
-
-.win.normal #tabs-container{
-    margin-right: -20px;
+    margin-right: 20px;
 }
 
 .win.normal .tab-group-indicator {
