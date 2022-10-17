@@ -64,4 +64,5 @@ button[name="UpdateButton"] {
 
 #header {
     height: 30px;
+    min-height: unset !important;
 }
