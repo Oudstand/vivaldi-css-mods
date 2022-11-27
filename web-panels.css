@@ -1,15 +1,14 @@
-.ToolbarButton-Button[name="PanelHistory"] {
-    margin-bottom: 10px;
-    /* adds a spacing to the other web panels */
-}
 #switch .toolbar-divider {
     height: 4px !important;
     border-radius: 10px !important;
     background: gray !important;
 }
-
 #switch .toolbar-divider button {
     display: none;
+}
+#switch .toolbar-spacer {
+    height: 10px !important;
+    flex: 0 !important;
 }
 .ToolbarButton-Button[title*="spotify"], .ToolbarButton-Button[title*="youtube"], .ToolbarButton-Button[title*="radiobob"], .ToolbarButton-Button[title*="We aRe oNe"] {
     position: absolute !important;
