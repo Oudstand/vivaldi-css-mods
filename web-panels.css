@@ -1,22 +1,26 @@
-.panelbtn.history {
+.toolbar-panel .button-toolbar {
+    height: unset !important;
+}
+.ToolbarButton-Button[name="PanelHistory"] {
     margin-bottom: 10px;
     /* adds a spacing to the other web panels */
 }
-.panelbtn.history+.panelbtn[title*="empty"] {
+.ToolbarButton-Button.history+.ToolbarButton-Button[title*="empty"] {
     display: none !important;
 }
-.panelbtn[title*="empty"] {
-    height: 1px !important;
-    margin: 3px 0;
+.ToolbarButton-Button[title*="empty"] {
+    height: 4px !important;
+    background: gray;
+    margin: 0 6px;
+    border-radius: 10px !important;
 }
-.panelbtn[title*="empty"] img {
-    height: 1px !important;
-    background-color: gray !important;
+.ToolbarButton-Button[title*="empty"] img {
+   display: none;
 }
-.panelbtn[title*="empty"]:hover {
+.ToolbarButton-Button[title*="empty"]:hover {
     background-color: unset !important;
 }
-.panelbtn[title*="spotify"], .panelbtn[title*="youtube"], .panelbtn[title*="radiobob"], .panelbtn[title*="We aRe oNe"] {
+.ToolbarButton-Button[title*="spotify"], .ToolbarButton-Button[title*="youtube"], .ToolbarButton-Button[title*="radiobob"], .ToolbarButton-Button[title*="We aRe oNe"] {
     position: absolute !important;
     bottom: 30px;
 }
