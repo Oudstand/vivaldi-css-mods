@@ -1,24 +1,15 @@
-.toolbar-panel .button-toolbar {
-    height: unset !important;
-}
 .ToolbarButton-Button[name="PanelHistory"] {
     margin-bottom: 10px;
     /* adds a spacing to the other web panels */
 }
-.ToolbarButton-Button.history+.ToolbarButton-Button[title*="empty"] {
-    display: none !important;
-}
-.ToolbarButton-Button[title*="empty"] {
+#switch .toolbar-divider {
     height: 4px !important;
-    background: gray;
-    margin: 0 6px;
     border-radius: 10px !important;
+    background: gray !important;
 }
-.ToolbarButton-Button[title*="empty"] img {
-   display: none;
-}
-.ToolbarButton-Button[title*="empty"]:hover {
-    background-color: unset !important;
+
+#switch .toolbar-divider button {
+    display: none;
 }
 .ToolbarButton-Button[title*="spotify"], .ToolbarButton-Button[title*="youtube"], .ToolbarButton-Button[title*="radiobob"], .ToolbarButton-Button[title*="We aRe oNe"] {
     position: absolute !important;
