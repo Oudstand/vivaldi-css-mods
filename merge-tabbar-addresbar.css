@@ -17,22 +17,22 @@
     width: 27vw;
 }
 
-.toolbar-mainbar:not(.toolbar-wrap) {
+.mainbar .toolbar-mainbar:not(.toolbar-wrap .toolbar-droptarget) {
     position: absolute;
     top: 0;
     left: 30px !important;
     height: 30px;
 }
 
-.toolbar-mainbar {
+.mainbar .toolbar-mainbar {
      background: var(--colorBg) !important;
 }
 
-.toolbar-mainbar::before, .toolbar-extensions::before {
+.mainbar .toolbar-mainbar::before, .mainbar .toolbar-extensions::before {
     display:none;
 }
 
-.win.normal .toolbar-mainbar {
+.win.normal .mainbar .toolbar-mainbar {
     left: unset;
     right: unset;
 }
@@ -46,13 +46,6 @@
     right: unset !important;
 }
 
-button[name="UpdateButton"] {
-    position: fixed;
-    right: 0;
-    top: 32px; 
-    height: 25px !important;
-}
-
 .window-buttongroup{
     height:35px;
 }
@@ -64,8 +57,4 @@ button[name="UpdateButton"] {
 #header {
     height: 30px;
     min-height: unset !important;
-}
-
-.win.normal #header {
-    margin-top: -5px;
 }

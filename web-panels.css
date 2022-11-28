@@ -10,10 +10,6 @@
     height: 10px !important;
     flex: 0 !important;
 }
-.ToolbarButton-Button[title*="spotify"], .ToolbarButton-Button[title*="youtube"], .ToolbarButton-Button[title*="radiobob"], .ToolbarButton-Button[title*="We aRe oNe"] {
-    position: absolute !important;
-    bottom: 30px;
-}
 .webpanel {
     background-color: var(--colorBorder);
 }
