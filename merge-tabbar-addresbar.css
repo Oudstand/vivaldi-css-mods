@@ -1,8 +1,7 @@
-#tabs-container {
+#tabs-tabbar-container {
     position: fixed;
     left: calc(26vw + 140px);
     right: 0;      
-    top: 0;
     margin-right: 20px;
 }
 
@@ -65,4 +64,8 @@ button[name="UpdateButton"] {
 #header {
     height: 30px;
     min-height: unset !important;
+}
+
+.win.normal #header {
+    margin-top: -5px;
 }
