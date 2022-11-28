@@ -1,18 +1,24 @@
 #switch .toolbar-divider {
     height: 4px !important;
+    max-width: 20px;
+    margin: 5px;
     border-radius: 10px !important;
     background: gray !important;
 }
+
 #switch .toolbar-divider button {
     display: none;
 }
+
 #switch .toolbar-spacer {
     height: 10px !important;
     flex: 0 !important;
 }
+
 .webpanel {
     background-color: var(--colorBorder);
 }
+
 .webpanel-header {
     border-bottom: unset !important;
 }
