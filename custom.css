@@ -30,11 +30,6 @@
 
 .tab .close {
     border-radius: 100%;
-    background-color: transparent;
-}
-.tab .close:hover {
-    border-radius: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .button-toolbar.newtab > button, .button-toolbar.newtab > button:hover {
@@ -43,6 +38,10 @@
     /* custom new tab icon */
 }
 
-span > .tab-position > .tab:not(.tab-mini):not(.active):hover {
-    background-color: var(--colorHighlightFgAlphaHeavy) !important;
+#webview-container:has(#webpage-stack .mosaic.visible) {
+    box-shadow: 0 0 0 8px var(--colorBorder), inset 0 0 0 4px var(--colorBorder);
+}
+
+.mosaic-split .mosaic-split-line, .mosaic-split .mosaic-split-line::before, .mosaic-split .mosaic-split-line::after {
+    background-color: var(--colorBorder)
 }
