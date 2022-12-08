@@ -1,5 +1,6 @@
 #tabs-tabbar-container {
     position: fixed;
+    top: 0;
     left: calc(26vw + 140px);
     right: 0;      
     margin-right: 20px;
@@ -9,7 +10,7 @@
     top: -2px;
 }
 
-.win.normal #titlebar {
+.win.normal #tabs-tabbar-container, .win.normal #titlebar {
     top: -5px;
 }
 
