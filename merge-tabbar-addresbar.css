@@ -2,7 +2,8 @@
     position: fixed;
     top: 0;
     left: calc(26vw + 140px);
-    right: 0;      
+    right: 0;
+    padding-top: 0 !important;
     margin-right: 20px;
 }
 
@@ -10,7 +11,7 @@
     top: -2px;
 }
 
-.win.normal #tabs-tabbar-container, .win.normal #titlebar {
+.win.normal #titlebar {
     top: -5px;
 }
 
@@ -26,11 +27,11 @@
 }
 
 .mainbar .toolbar-mainbar {
-     background: var(--colorBg) !important;
+    background: var(--colorBg) !important;
 }
 
 .mainbar .toolbar-mainbar::before, .mainbar .toolbar-extensions::before {
-    display:none;
+    display: none;
 }
 
 .win.normal .mainbar .toolbar-mainbar {
@@ -47,8 +48,8 @@
     right: unset !important;
 }
 
-.window-buttongroup{
-    height:35px;
+.window-buttongroup {
+    height: 35px;
 }
 
 #header, #main {
