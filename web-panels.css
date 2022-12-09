@@ -22,3 +22,18 @@
 .webpanel-header {
     border-bottom: unset !important;
 }
+
+
+#switch .workspace-popup button {
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+}
+
+#switch .workspace-popup svg {
+    margin: 0;
+}
+
+#switch .workspace-popup .button-toolbar-menu-indicator, #switch .workspace-popup .button-title  {
+    display: none;
+}
