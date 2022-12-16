@@ -23,13 +23,19 @@
     border-bottom: unset !important;
 }
 
+#switch button[name="UpdateButton"] .button-title {
+    display:none;
+}
 
+
+/* style workspace button */
 #switch .workspace-popup button {
     opacity: 1;
     margin: 0;
     padding: 0;
 }
 
+/* display default icon only #start */
 #switch .workspace-popup svg {
     margin: 0;
 }
@@ -37,3 +43,28 @@
 #switch .workspace-popup .button-toolbar-menu-indicator, #switch .workspace-popup .button-title  {
     display: none;
 }
+/* display default icon only #stop */
+
+/* show custom title only #start*/
+/*#switch .workspace-popup svg {
+    display: none;
+}
+
+#switch .workspace-popup .button-toolbar-menu-indicator {
+    display: none;
+}
+
+#switch .workspace-popup .button-title {
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+}
+
+#switch .workspace-popup button:not(:has(.button-title)):after {
+    content: '😒'; /* set custom title for default workspace */
+/*    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-size: 15px;
+}
+/* show custom title #stop */
