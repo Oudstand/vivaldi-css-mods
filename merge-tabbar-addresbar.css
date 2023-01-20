@@ -1,9 +1,5 @@
 #tabs-tabbar-container {
-    position: fixed;
-    top: 0;
-    left: calc(26vw + 140px);
-    right: 0;
-    padding-top: 0 !important;
+    margin-left: calc(26vw + 140px);
     margin-right: 20px;
 }
 
