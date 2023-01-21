@@ -1,6 +1,11 @@
 #tabs-tabbar-container {
     margin-left: calc(26vw + 140px);
     margin-right: 20px;
+    transition: all .75s;
+}
+
+#browser:has(.toolbar-mailbar) #tabs-tabbar-container {
+    margin-left: 46vw;
 }
 
 .win.normal .tab-group-indicator {
@@ -34,6 +39,10 @@
 .win.normal .mainbar .toolbar-mainbar {
     left: unset;
     right: unset;
+}
+
+.mainbar .toolbar-mailbar {
+    width: 45vw;
 }
 
 .toolbar-extensions {
