@@ -5,7 +5,8 @@
 }
 
 #browser:has(.toolbar-mailbar) #tabs-tabbar-container {
-    margin-left: 46vw;
+    margin-left: 865px;
+    margin-right: -50px;
 }
 
 .win.normal .tab-group-indicator {
@@ -42,7 +43,7 @@
 }
 
 .mainbar .toolbar-mailbar {
-    width: 45vw;
+    width: 855px;
 }
 
 .toolbar-extensions {
