@@ -17,9 +17,10 @@
     top: -5px;
 }
 
-.UrlBar-AddressField {
-    /* added animation for extending and reducing the width */
+.UrlBar-AddressField {    
     width: 27vw;
+    
+    /* added animation for extending and reducing the width */
     transition: .2s ease-in-out !important;
 }
 
@@ -29,7 +30,7 @@
     height: 30px;
 }
 
- .OmniDropdown {
+.OmniDropdown {
     margin-top: -3px;
 }
 
