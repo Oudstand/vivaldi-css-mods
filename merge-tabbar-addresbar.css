@@ -18,7 +18,19 @@
 }
 
 .UrlBar-AddressField {
+    /* added animation for extending and reducing the width */
     width: 27vw;
+    transition: .2s ease-in-out !important;
+}
+
+/* .mainbar:has(.OmniDropdown) */ .UrlBar-AddressField:focus-within {
+    /* extends the width of the url bar addressfield while it is focused */
+    width: 40vw !important;
+    height: 30px;
+}
+
+ .OmniDropdown {
+    margin-top: -3px;
 }
 
 .mainbar .toolbar-mainbar:not(.toolbar-wrap .toolbar-droptarget) {
