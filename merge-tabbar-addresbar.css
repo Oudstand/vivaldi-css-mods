@@ -13,7 +13,7 @@
     top: -2px;
 }
 
-.win.normal #titlebar {
+.win.normal #titlebar:not(.tabless) {
     top: -5px;
 }
 
@@ -72,11 +72,11 @@
     height: 35px;
 }
 
-#header, #main {
+#browser:not(:has(.tabless)) #main {
     position: unset;
 }
 
-#header {
+.win.normal #header {
     height: 30px;
     min-height: unset !important;
 }
