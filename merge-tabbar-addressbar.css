@@ -72,7 +72,7 @@
     height: 35px;
 }
 
-#browser:not(:has(.tabless)) #main {
+#browser:not(.is-settingspage) #main {
     position: unset;
 }
 
