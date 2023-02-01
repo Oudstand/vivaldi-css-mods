@@ -23,10 +23,6 @@
     background-color: var(--colorBorder);
 }
 
-.webpanel-header {
-    border-bottom: unset !important;
-}
-
 #switch button[name="UpdateButton"] .button-title {
     display:none;
 }
