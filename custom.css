@@ -45,3 +45,18 @@
 .mosaic-split .mosaic-split-line, .mosaic-split .mosaic-split-line::before, .mosaic-split .mosaic-split-line::after {
     background-color: var(--colorBorder)
 }
+
+
+/* edge dev like border around website */
+#webview-container {
+    background-color: var(--colorBorder);   
+}
+
+#webpage-stack {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
