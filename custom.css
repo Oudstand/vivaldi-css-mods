@@ -46,6 +46,10 @@
     background-color: var(--colorBorder)
 }
 
+.hasfocus .mosaic-tile .tiled.active {
+    box-shadow: 0 0 0 2px var(--colorHighlightBg) !important;
+}
+
 
 /* edge dev like border around website */
 #webpage-stack {
