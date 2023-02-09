@@ -48,15 +48,14 @@
 
 
 /* edge dev like border around website */
-#webview-container {
-    background-color: var(--colorBorder);   
-}
-
 #webpage-stack {
+    box-shadow: 0 0 0 0.75rem var(--colorBorder);
+
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0.75rem;
     border-bottom-left-radius: 0.75rem;
     border-bottom-right-radius: 0.75rem;
+
     margin-bottom: 0.5rem;
-    margin-right: 0.5rem;
+    margin-right: 0.5rem; 
 }
