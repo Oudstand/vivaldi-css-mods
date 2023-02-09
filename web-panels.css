@@ -1,5 +1,5 @@
-#panels .panel-group {
-    left: 34px !important;
+#panels-container {
+    border-color: var(--colorBorder) !important;
 }
 
 #switch .toolbar-divider {
