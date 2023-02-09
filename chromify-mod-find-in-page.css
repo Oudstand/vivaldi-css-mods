@@ -8,9 +8,9 @@
     --separatorHeight: calc(var(--baseHeight) * 0.6);
     --buttonSize: calc(var(--baseHeight) * 0.75);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: var(--colorBgLight);
+    background-color: var(--colorBorder);
     border: 1px solid var(--colorBorder);
-    border-radius: var(--radiusRounded);
+    border-radius: .75rem;
     min-width: var(--baseWidth);
     height: var(--baseHeight);
     position: absolute;
@@ -47,14 +47,22 @@
     -webkit-margin-end: 3.5em;
 }
 
+.find-in-page .fip-input-container {
+    padding-left: 18px;
+}
+
 /* Make the input field big and flat */
 .find-in-page .fip-input-container input[type=search] {
-    border-radius: 0;
+    border-radius: 7px;
     background: none;
     box-shadow: none;
     margin-bottom: 0;
     height: 100%;
     border: none;
+}
+
+.find-in-page .fip-input-container input[type=search]:focus-visible {
+    outline-color: var(--colorBgLight);
 }
 
 /* Center the counter */
