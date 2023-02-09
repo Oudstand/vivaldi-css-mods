@@ -39,7 +39,7 @@
 }
 
 #webview-container:has(#webpage-stack .mosaic.visible) {
-    box-shadow: 0 0 0 8px var(--colorBorder), inset 0 0 0 4px var(--colorBorder);
+    box-shadow: 0 0 0 8px var(--colorBorder), inset 0 0 0 8px var(--colorBorder);
 }
 
 .mosaic-split .mosaic-split-line, .mosaic-split .mosaic-split-line::before, .mosaic-split .mosaic-split-line::after {
