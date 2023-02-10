@@ -1,5 +1,6 @@
 #panels-container {
     border-color: var(--colorBorder) !important;
+    background-color: var(--colorBorder);
 }
 
 #switch .toolbar-divider {
@@ -43,6 +44,32 @@
 #switch .workspace-popup .button-toolbar-menu-indicator, #switch .workspace-popup .button-title  {
     display: none;
 }
+
+.panel-group {
+    margin-bottom: .5rem;
+}
+
+.panel-group::before{
+    content: '';
+    position: absolute;
+    width: .75rem;
+    height: .75rem;
+    background-color: var(--colorBorder);
+    -webkit-mask-image: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 70%, #000 73%);
+    transform: rotate(180deg);
+}
+
+.panel-group::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: .75rem;
+    height: .75rem;
+    background-color: var(--colorBorder);
+    -webkit-mask-image: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 70%, #000 73%);
+    transform: rotate(90deg);
+}
+
 /* display default icon only #stop */
 
 /* show custom title only #start*/
