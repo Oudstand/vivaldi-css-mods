@@ -4,7 +4,8 @@
     position: absolute !important;
     background-color: var(--colorAccentBg);
 }
-button[title="Speed Dial Generator"], button[title="Modern scrollbar"], button[title="Charcoal: Dark Mode for Messenger"], button[title="Cookie Notice Blocker"], button[title="Angular DevTools"] {
+button[title="Speed Dial Generator"], button[title="Modern scrollbar"], button[title="Charcoal: Dark Mode for Messenger"], 
+    button[title="Cookie Notice Blocker"], button[title="Angular DevTools"], button[title="Vivaldi Forum mod"] {
     /* hides the extensions of the given title */
     display: none !important;
 }
