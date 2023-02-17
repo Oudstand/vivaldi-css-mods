@@ -44,6 +44,7 @@
 
 .mainbar .toolbar-mainbar {
     background: var(--colorBg) !important;
+    border-bottom: none !important;
 }
 
 .mainbar .toolbar-mainbar::before, .mainbar .toolbar-extensions::before {
