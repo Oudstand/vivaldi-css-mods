@@ -57,15 +57,40 @@
 /* edge dev like border around website */
 /* start */
 #webpage-stack {
-    box-shadow: 0 0 0 0.75rem var(--colorBorder);
+    box-shadow: 0 0 0 1rem var(--colorBorder);
 
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
+    /* border-top-left-radius: 0.75rem; */
+    /* border-top-right-radius: 0.75rem; */
     border-bottom-left-radius: 0.75rem;
     border-bottom-right-radius: 0.75rem;
-
+    
     margin-bottom: 0.5rem;
-    margin-right: 0.5rem; 
+    margin-right: 0.5rem;
+}
+
+#webpage-stack::before {
+    content: '';
+    position: absolute;
+    width: .75rem;
+    height: .75rem;
+    background-color: var(--colorBorder);
+    -webkit-mask-image: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 70%, #000 73%);
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+#webpage-stack::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: .75rem;
+    height: .75rem;
+    background-color: var(--colorBorder);
+    -webkit-mask-image: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 70%, #000 73%);
+    transform: rotate(-90deg);
+    z-index: 1;
+    top: 0;
+    right: 0;
 }
 
 .StatusInfo {
@@ -76,7 +101,7 @@
     margin-bottom: .5rem;
 }
 
-.panel-group::before{
+.panel-group::before {
     content: '';
     position: absolute;
     width: .75rem;
@@ -86,7 +111,7 @@
     transform: rotate(180deg);
 }
 
-.panel-group::after{
+.panel-group::after {
     content: '';
     position: absolute;
     bottom: 0;
