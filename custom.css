@@ -122,3 +122,7 @@
     transform: rotate(90deg);
 }
 /* stop  */
+
+.window-maximize {
+    border-radius: 2px;
+}
