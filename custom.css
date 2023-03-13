@@ -32,10 +32,8 @@
     border-radius: 100%;
 }
 
-.button-toolbar.newtab > button, .button-toolbar.newtab > button:hover {
-    -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg width='26' height='26' version='1.1' viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg' xmlns:cc='http://creativecommons.org/ns%23' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Cmetadata%3E%3Crdf:RDF%3E%3Ccc:Work rdf:about=''%3E%3Cdc:format%3Eimage/svg+xml%3C/dc:format%3E%3Cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage'/%3E%3Cdc:title/%3E%3C/cc:Work%3E%3C/rdf:RDF%3E%3C/metadata%3E%3Cpath d='m13 5a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8zm-1 3h2v4h4v2h-4v4h-2v-4h-4v-2h4v-4z' style='paint-order:stroke fill markers'/%3E%3C/svg%3E");
-    -webkit-mask-position: 50% 50%;
-    /* custom new tab icon */
+.mosaic-root {
+    background-color: var(--colorBorder);
 }
 
 #webview-container:has(#webpage-stack .mosaic.visible) {
