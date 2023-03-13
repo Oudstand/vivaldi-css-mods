@@ -54,7 +54,7 @@
 
 /* edge dev like border around website */
 /* start */
-#webpage-stack {
+#browser:not(.fullscreen) #webpage-stack {
     box-shadow: 0 0 0 1rem var(--colorBorder);
 
     /* border-top-left-radius: 0.75rem; */
@@ -66,7 +66,7 @@
     margin-right: 0.5rem;
 }
 
-#webpage-stack::before {
+#browser:not(.fullscreen) #webpage-stack::before {
     content: '';
     position: absolute;
     width: .75rem;
@@ -77,7 +77,7 @@
     z-index: 1;
 }
 
-#webpage-stack::after {
+#browser:not(.fullscreen) #webpage-stack::after {
     content: '';
     position: absolute;
     bottom: 0;
