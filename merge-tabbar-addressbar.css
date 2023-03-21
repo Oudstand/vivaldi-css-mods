@@ -6,7 +6,7 @@
 }
 
 #browser:has(.toolbar-mailbar) #tabs-tabbar-container {
-    margin-left: 865px;
+    margin-left: 47rem;
     margin-right: -50px;
 }
 
@@ -58,7 +58,11 @@
 }
 
 .mainbar .toolbar-mailbar {
-    width: 855px;
+    width: 45rem;
+}
+
+.toolbar-mailbar .button-toolbar[title*="Seite"] {
+    display: none;
 }
 
 .toolbar-extensions {
