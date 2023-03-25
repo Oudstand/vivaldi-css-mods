@@ -1,6 +1,6 @@
 #tabs-tabbar-container {
-    margin-left: calc(26vw + 140px);
-    margin-right: 20px;
+    margin-left: calc(26vw + 140px) !important;
+    margin-right: 65px !important;
     transition: all .75s;
     padding-top: 0 !important;
 }
