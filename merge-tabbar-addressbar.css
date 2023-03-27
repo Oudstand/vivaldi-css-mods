@@ -1,11 +1,11 @@
 #tabs-tabbar-container {
-    margin-left: calc(26vw + 140px) !important;
-    margin-right: 65px !important;
+    margin-left: calc(26vw + 140px);
+    margin-right: 40px;
     transition: all .75s;
     padding-top: 0 !important;
 }
 
-#browser:has(.toolbar-mailbar) #tabs-tabbar-container {
+#browser:has(.toolbar-mailbar:not(.toolbar-hidden)) #tabs-tabbar-container {
     margin-left: 47rem;
     margin-right: -50px;
 }
