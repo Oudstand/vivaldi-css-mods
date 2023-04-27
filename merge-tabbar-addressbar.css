@@ -82,7 +82,7 @@
     position: unset;
 }
 
-.win.normal #header {
+#header {
     height: 30px;
     min-height: unset !important;
 }
