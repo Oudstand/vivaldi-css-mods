@@ -119,6 +119,10 @@
     -webkit-mask-image: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 70%, #000 73%);
     transform: rotate(90deg);
 }
+
+.webpanel-content {
+    border-top-left-radius: .75rem;
+}
 /* stop  */
 
 .window-maximize {
