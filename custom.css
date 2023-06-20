@@ -20,6 +20,11 @@
     background-color: var(--colorAccentBg) !important;
 }
 
+
+.address-top .mainbar {
+    border-bottom: none;
+}
+
 .tab.active {
     font-weight: bold;
 }
