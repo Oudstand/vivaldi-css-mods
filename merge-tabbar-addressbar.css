@@ -102,3 +102,20 @@
 .vivaldi .expand-arrow {
     display: none;
 }
+
+#browser.popup #header {
+    height: 35px !important;
+    background: var(--colorBg) !important;
+}
+
+#browser.popup .UrlBar-AddressField, #browser.popu .UrlBar-AddressField:focus-within {    
+    width: 40vw !important;
+}
+
+#browser.popup .window-buttongroup button {
+    height: 35px !important;
+}
+
+#browser.popup .toolbar-extensions {
+    left: calc(100vw - 175px) !important;
+}
