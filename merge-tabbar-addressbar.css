@@ -1,13 +1,13 @@
-#tabs-tabbar-container {
+/* #tabs-tabbar-container {
     margin-left: calc(26vw + 140px);
-    margin-right: 40px;
+    margin-right: 65px;
     transition: all .75s;
     padding-top: 0 !important;
 }
 
 #browser:has(.toolbar-mailbar:not(.toolbar-hidden)) #tabs-tabbar-container {
     margin-left: 47rem;
-    margin-right: -50px;
+    margin-right: 0;
 }
 
 .win.normal .tab-group-indicator {
@@ -20,13 +20,10 @@
 
 .UrlBar-AddressField {    
     width: 27vw;
-    
-    /* added animation for extending and reducing the width */
     transition: .2s ease-in-out !important;
 }
 
-/* .mainbar:has(.OmniDropdown) */ .UrlBar-AddressField:focus-within {
-    /* extends the width of the url bar addressfield while it is focused */
+.UrlBar-AddressField:focus-within {
     width: 40vw !important;
     height: 30px;
 }
@@ -118,4 +115,4 @@
 
 #browser.popup .toolbar-extensions {
     left: calc(100vw - 175px) !important;
-}
+} /*

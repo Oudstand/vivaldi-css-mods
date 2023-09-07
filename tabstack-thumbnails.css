@@ -2,6 +2,7 @@
 
 /* author @shifte @Hababr @dude99 */
 
+/*
 #vivaldi-tooltip .tooltip .tooltip-item {
     width: 280px !important;
     height: auto !important;
@@ -17,7 +18,10 @@
 }
 #vivaldi-tooltip .tooltip .tooltip-item .thumbnail-text {
     order: 1!important;
-}
+} */
+
+
+
 /* Hide thumbnail on single tab
 #vivaldi-tooltip .tooltip .tab-solo .tooltip-item {
  display: none;}
