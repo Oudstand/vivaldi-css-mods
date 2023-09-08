@@ -2,6 +2,13 @@
     order: 0 !important;
     flex: 2 !important;
     background: var(--colorAccentBg) !important;
+    padding-left: 1rem !important;
+    padding-bottom: 0 !important;
+    border-top-width: 0 !important;
+}
+
+.tab {
+    border-radius: var(--radiusHalf) !important;
 }
 
 .tab.active {
@@ -12,12 +19,12 @@
     display: none !important;
 }
 
-.tab {
-    border-radius: var(--radiusHalf) !important;
-}
-
 .tab-position:hover .tab:not(.active), .tab:hover:not(.active) {
     background-color: var(--colorBgDarker) !important;
+}
+
+.tab.unread{
+   background-image: linear-gradient(-135deg, var(--colorFgFadedMore) 5px, transparent 5px) !important;
 }
 
 .tab-group-indicator {
@@ -36,9 +43,9 @@
 
 .tab-indicator.active {
     background-color: var(--colorHighlightFgAlpha) !important;
-    border-top-width: 3px !important;
-    height: 12px !important;
-    padding-top: 6px !important;
+    border-top-width: 3px !important;    
+    height: 9px !important;
+    padding-top: 3px !important;
 }
 
 .tab-indicator {
@@ -47,12 +54,20 @@
 
 .UrlBar-AddressField {      
     /* added animation for extending and reducing the width */
-    transition: .2s ease-in-out !important;
+    transition: flex .35s ease-in-out !important;
     background-color: var(--colorBgLightIntense);
 }
 
 .UrlBar-AddressField:focus-within {
     flex: 2;
+}
+
+.toolbar-mainbar {
+    min-height: calc(35px / var(--uiZoomLevel)) !important;
+}
+
+.window-buttongroup {
+    height: 35px !important;
 }
 
 #vivaldi-tooltip .tooltip{
