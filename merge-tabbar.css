@@ -1,3 +1,4 @@
+/*
 #tabs-tabbar-container {
     order: 0 !important;
     flex: 2 !important;
@@ -53,7 +54,6 @@
 }
 
 .UrlBar-AddressField {      
-    /* added animation for extending and reducing the width */
     transition: flex .35s ease-in-out !important;
     background-color: var(--colorBgLightIntense);
 }
@@ -69,18 +69,4 @@
 .window-buttongroup {
     height: 35px !important;
 }
-
-#vivaldi-tooltip .tooltip{
-    height: max-content !important;
-    width: 280px !important;
-    top: 2.5rem !important;
-}
-
-#vivaldi-tooltip .tooltip .tooltip-item {
-    width: 280px !important;
-    height: auto !important;
-}
-
-#vivaldi-tooltip .tooltip .thumbnail-image {
-    display: none !important;
-}
+*/

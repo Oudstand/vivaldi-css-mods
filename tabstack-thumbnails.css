@@ -2,6 +2,21 @@
 
 /* author @shifte @Hababr @dude99 */
 
+#vivaldi-tooltip .tooltip{
+    height: max-content !important;
+    width: 280px !important;
+    /* top: 2.5rem !important; */
+}
+
+#vivaldi-tooltip .tooltip .tooltip-item {
+    width: 280px !important;
+    height: auto !important;
+}
+
+#vivaldi-tooltip .tooltip .thumbnail-image {
+    display: none !important;
+}
+
 /*
 #vivaldi-tooltip .tooltip .tooltip-item {
     width: 280px !important;
