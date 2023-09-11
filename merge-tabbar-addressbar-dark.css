@@ -1,5 +1,6 @@
 #tabs-tabbar-container {
     background-color: var(--colorAccentBg) !important;
+    /* top: -4px */
 }
 
 .tab {
@@ -20,7 +21,7 @@
 }
 
 .tab-indicator {
-    background-color: var(--colorBgLightIntense) !important;
+    background-color: var(--colorHighlightFgAlphaHeavy) !important;
 }
 
 .UrlBar-AddressField {    
@@ -37,8 +38,18 @@
 
 #header {
     background-color: var(--colorAccentBg) !important;
+    /* height: 40px !important; */
 }
 
 #browser.popup #header {
     background: var(--colorAccentBg) !important;
 }
+
+/*
+.toolbar-mainbar {
+    top: 4px !important;
+}
+
+#titlebar {
+    top: 1px !important;
+} */
