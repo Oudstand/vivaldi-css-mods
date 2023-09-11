@@ -1,4 +1,4 @@
-/* #tabs-tabbar-container {
+#tabs-tabbar-container {
     margin-left: calc(26vw + 140px);
     margin-right: 65px;
     transition: all .75s;
@@ -41,7 +41,6 @@
 }
 
 .mainbar .toolbar-mainbar {
-    background: var(--colorBg) !important;
     border-bottom: none !important;
 }
 
@@ -65,7 +64,6 @@
 .toolbar-extensions {
     position: absolute !important;
     transform: translate(-100%);
-    background-color: var(--colorBg) !important;
     left: calc(100vw - 165px) !important;
     height: 30px !important;
     right: unset !important;
@@ -115,4 +113,4 @@
 
 #browser.popup .toolbar-extensions {
     left: calc(100vw - 175px) !important;
-} */
+}

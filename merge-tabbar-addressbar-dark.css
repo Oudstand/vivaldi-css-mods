@@ -1,0 +1,44 @@
+#tabs-tabbar-container {
+    background-color: var(--colorAccentBg) !important;
+}
+
+.tab {
+    border-radius: var(--radiusHalf) !important;
+}
+
+.tab.active {
+    background: var(--colorTabBar, transparent) !important;
+}
+
+.tab.active:before, .tab.active:after {
+    display: none !important;
+}
+
+.tab-indicator.active {
+    background-color: var(--colorHighlightFgAlpha) !important;
+    border-bottom-width: 3px !important;
+}
+
+.tab-indicator {
+    background-color: var(--colorBgLightIntense) !important;
+}
+
+.UrlBar-AddressField {    
+    background-color: var(--colorBgLightIntense);
+}
+
+.mainbar .toolbar-mainbar {
+    background: var(--colorAccentBg) !important;
+}
+
+.toolbar-extensions {
+    background-color: var(--colorAccentBg) !important;
+}
+
+#header {
+    background-color: var(--colorAccentBg) !important;
+}
+
+#browser.popup #header {
+    background: var(--colorAccentBg) !important;
+}
