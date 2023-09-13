@@ -100,7 +100,20 @@
 
 #browser.popup #header {
     height: 35px !important;
-    background: var(--colorBg) !important;
+}
+
+#browser.popup .UrlBar-AddressField {    
+    background-color: var(--colorBgLightIntense);
+}
+
+#browser.popup #pagetitle {
+    margin-left: 45vw !important;
+    padding: 10px 0 0 0 !important;
+    max-width: calc(55vw - 220px) !important;
+}
+
+#browser.popup .toolbar-mainbar {
+    left: 10px !important;
 }
 
 #browser.popup .UrlBar-AddressField, #browser.popu .UrlBar-AddressField:focus-within {    
@@ -112,5 +125,5 @@
 }
 
 #browser.popup .toolbar-extensions {
-    left: calc(100vw - 175px) !important;
+    left: calc(100vw - 150px) !important;
 }
