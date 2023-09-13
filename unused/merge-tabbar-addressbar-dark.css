@@ -1,6 +1,5 @@
 #tabs-tabbar-container {
     background-color: var(--colorAccentBg) !important;
-    /* top: -4px */
 }
 
 .tab {
@@ -38,18 +37,8 @@
 
 #header {
     background-color: var(--colorAccentBg) !important;
-    /* height: 40px !important; */
 }
 
 #browser.popup #header {
     background: var(--colorAccentBg) !important;
 }
-
-/*
-.toolbar-mainbar {
-    top: 4px !important;
-}
-
-#titlebar {
-    top: 1px !important;
-} */
