@@ -8,7 +8,7 @@
     overflow: hidden;
 }
 
- .resize, .tab-strip {
+.resize, .tab-strip {
     overflow: hidden;
 }
 
@@ -60,6 +60,8 @@
 .tab-group-indicator {
     top: -7px !important;
     height: 0;
+    padding-right: calc(var(--radius) * 0.33) !important;
+    padding-left: calc(var(--radius) * 0.33) !important;
 }
 
 .tab-indicator:first-of-type {
