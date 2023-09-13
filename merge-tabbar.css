@@ -6,6 +6,30 @@
     padding-left: 1rem !important;
     padding-bottom: 0 !important;
     border-top-width: 0 !important;
+    overflow: hidden;
+}
+
+ .resize, .tab-strip {
+    overflow: hidden;
+}
+
+.tab-strip {
+    display: flex !important;
+}
+
+.tab-strip > span {
+    flex: 1 !important;
+    display: flex;
+    overflow: hidden !important;
+}
+
+.tab-strip .newtab {
+    left: unset !important;
+}
+
+.tab-strip .toolbar {
+    flex: 0 !important;
+    padding-right: 2rem;
 }
 
 .tab {
@@ -22,6 +46,13 @@
 
 .tab-position:hover .tab:not(.active), .tab:hover:not(.active) {
     background-color: var(--colorBgDarker) !important;
+}
+
+.tab-position {
+    transform: unset !important;
+    flex: 1 !important;
+    position: relative !important;
+    
 }
 
 .tab.unread{
