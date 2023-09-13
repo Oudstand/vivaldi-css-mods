@@ -80,8 +80,17 @@
     padding-top: 3px !important;
 }
 
+#browser.maximized .tab-indicator.active {
+    height: 12px !important;
+    padding-top: 6px !important;
+}
+
 .tab-indicator {
     background-color: var(--colorBgLightIntense) !important;
+}
+
+.toolbar-tabbar{
+    margin-right: 2rem;
 }
 
 .UrlBar-AddressField {      
