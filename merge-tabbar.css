@@ -1,4 +1,3 @@
-/*
 #tabs-tabbar-container {
     order: 0 !important;
     flex: 2 !important;
@@ -29,7 +28,6 @@
 
 .tab-strip .toolbar {
     flex: 0 !important;
-    padding-right: 2rem;
 }
 
 .tab {
@@ -61,6 +59,7 @@
 
 .tab-group-indicator {
     top: -7px !important;
+    height: 0;
 }
 
 .tab-indicator:first-of-type {
@@ -86,10 +85,10 @@
 }
 
 .tab-indicator {
-    background-color: var(--colorBgLightIntense) !important;
+    background-color: var(--colorHighlightFgAlphaHeavy) !important;
 }
 
-.toolbar-tabbar{
+.toolbar-tabbar {
     margin-right: 2rem;
 }
 
@@ -109,4 +108,3 @@
 .window-buttongroup {
     height: 35px !important;
 }
-*/
