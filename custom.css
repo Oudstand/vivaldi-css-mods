@@ -12,7 +12,7 @@
     /* hides the loading progress */
 }
 .bookmark-bar button:hover {
-    border-radius: 10px;
+    border-radius: var(--radius);
 }
 
 /* use correct accent color */
@@ -54,7 +54,7 @@
 }
 
 .StatusInfo-Content {
-    border-radius: .75rem !important;
+   border-radius: var(--radius) !important;    
 }
 
 /* edge dev like border around website */
