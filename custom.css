@@ -133,3 +133,9 @@
 .window-maximize {
     border-radius: 2px;
 }
+
+/* adjust hover effect */
+#switch .button-toolbar {
+    border-top-right-radius: var(--radius) !important;
+    border-bottom-right-radius: var(--radius) !important;
+}
