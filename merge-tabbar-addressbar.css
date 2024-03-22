@@ -103,7 +103,7 @@
     height: 35px !important;
 }
 
-#browser.popup .UrlBar-AddressField {    
+#browser.popup .UrlBar-AddressField {
     background-color: var(--colorBgLightIntense);
 }
 
@@ -117,7 +117,7 @@
     left: 10px !important;
 }
 
-#browser.popup .UrlBar-AddressField, #browser.popu .UrlBar-AddressField:focus-within {    
+#browser.popup .UrlBar-AddressField, #browser.popu .UrlBar-AddressField:focus-within {
     width: 40vw !important;
 }
 
