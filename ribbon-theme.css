@@ -1,0 +1,60 @@
+#main {
+    background-color: var(--colorAccentBg);
+}
+
+.startpage {
+    background-image: url("chrome://vivaldi-data/thumbnail/MDOR2SEXJHA3SZDYNDXIRP2LSPGNTSAD.png");
+    background-size: cover
+}
+
+.tab-strip {
+    margin: 1px 0;
+}
+
+.tab.active .tab-header {
+    margin: -0px;
+    background-color: var(--colorBgAlphaBlur) !important;
+}
+
+.bookmark-bar {    
+    background: var(--colorAccentBg) !important;
+    margin: .2rem;
+}
+
+.bookmark-bar .observer {
+    width: 100%;
+    margin: 0 .25rem !important;
+    border-radius: var(--radius) !important;
+    background: var(--colorBgAlphaBlur) !important;
+}
+
+.bookmark-bar .observer button {
+    border-radius: var(--radius);
+}
+
+#panels-container{
+    background-color: var(--colorAccentBg) !important;
+    width: 41px !important;
+}
+
+#switch {
+    background-color: var(--colorBgAlphaBlur) !important;
+    margin: .0rem .2rem .5rem .2rem;
+    border-radius: var(--radius);
+}
+
+.panel {
+    background-color: var(--colorBgAlphaBlur) !important;
+}
+
+.panel-group {
+    left: 41px !important;
+}
+
+.webpanel-header {
+    background-color: var(--colorBgAlphaBlur);
+}
+
+#browser, #header, #tabs-tabbar-container, .tab.active, .mainbar, .bookmark-bar, #main {
+    transition: background-color .5s, border-color .5s !important;
+}
