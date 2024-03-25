@@ -40,22 +40,6 @@
     border-radius: 100%;
 }
 
-.mosaic-root {
-    background-color: var(--colorBorder);
-}
-
-#webview-container:has(#webpage-stack .mosaic.visible) {
-    box-shadow: 0 0 0 8px var(--colorBorder), inset 0 0 0 8px var(--colorBorder);
-}
-
-.mosaic-split .mosaic-split-line, .mosaic-split .mosaic-split-line::before, .mosaic-split .mosaic-split-line::after {
-    background-color: var(--colorBorder)
-}
-
-.hasfocus .mosaic-tile .tiled.active {
-    box-shadow: 0 0 0 2px var(--colorHighlightBg) !important;
-}
-
 .StatusInfo-Content {
     border-radius: var(--radius) !important;
 }
