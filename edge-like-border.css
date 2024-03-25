@@ -1,0 +1,70 @@
+/* edge dev like border around website
+* Forum link: https://forum.vivaldi.net/topic/83618/edge-like-curved-frame-around-website?_=1711358792351
+*/
+#webpage-stack {
+    box-shadow: 0 0 0 var(--radius) var(--colorAccentBg);
+    /* box-shadow: 0 0 0 1rem var(--colorAccentBg); */
+
+    /* border-top-left-radius: var(--radius); */
+    /* border-top-right-radius: var(--radius); */
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+
+    margin-bottom: calc(var(--radius) / 2);
+    margin-right: calc(var(--radius) / 2);
+    /* margin-bottom: .5rem; */
+    /* margin-right: .5rem; */
+}
+
+#webpage-stack::before {
+    content: '';
+    position: absolute;
+    width: var(--radius);
+    height: var(--radius);
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 70%, var(--colorAccentBg) 73%);
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+#webpage-stack::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--radius);
+    height: var(--radius);
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 70%, var(--colorAccentBg) 73%);
+    transform: rotate(-90deg);
+    z-index: 1;
+}
+
+.panel-group::before {
+    content: '';
+    position: absolute;
+    width: var(--radius);
+    height: var(--radius);
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 70%, var(--colorAccentBg) 73%);
+    transform: rotate(180deg);
+    z-index: 1;
+}
+  
+.panel-group::after {
+    content: '';
+    position: absolute;
+    bottom:0;
+    width: var(--radius);
+    height: var(--radius);
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 70%, var(--colorAccentBg) 73%);
+    transform: rotate(90deg);
+    z-index: 1;
+}
+
+.StatusInfo {
+    margin-bottom: calc(var(--radius) / 2);
+    /* margin-bottom: .5rem; */
+}
+
+.panel-group {
+    margin-bottom: calc(var(--radius) / 2);
+    /* margin-bottom: .5rem; */
+}
