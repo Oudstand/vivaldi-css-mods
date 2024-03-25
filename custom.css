@@ -33,7 +33,7 @@
 }
 
 #switch {
-    background-color: var(--colorBorder);
+    background-color: var(--colorAccentBg);
 }
 
 .tab .close {

@@ -1,6 +1,6 @@
 #panels-container {
-    border-color: var(--colorBorder) !important;
-    background-color: var(--colorBorder);
+    border-color: var(--colorAccentBg) !important;
+    background-color: var(--colorAccentBg);
 }
 
 #switch .toolbar-divider {
@@ -21,7 +21,7 @@
 }
 
 .webpanel {
-    background-color: var(--colorBorder);
+    background-color: var(--colorAccentBg);
 }
 
 #switch button[name="UpdateButton"] .button-title {
