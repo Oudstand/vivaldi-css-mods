@@ -1,5 +1,10 @@
 #main {
     background-color: var(--colorAccentBg);
+    padding-top: 0.1rem;
+}
+
+.inner {
+    padding-top: 0.2rem;
 }
 
 .startpage {
