@@ -7,8 +7,8 @@
 
     /* border-top-left-radius: var(--radius); */
     /* border-top-right-radius: var(--radius); */
-    border-bottom-left-radius: var(--radius);
-    border-bottom-right-radius: var(--radius);
+    /* border-bottom-left-radius: var(--radius); */
+    /* border-bottom-right-radius: var(--radius); */
 
     margin-bottom: calc(var(--radius) / 2);
     margin-right: calc(var(--radius) / 2);
@@ -17,6 +17,19 @@
 }
 
 #webpage-stack::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: var(--radius);
+    outline: var(--radius) solid var(--colorAccentBg);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* #webpage-stack::before {
     content: '';
     position: absolute;
     width: var(--radius);
@@ -36,7 +49,7 @@
     background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 70%, var(--colorAccentBg) 73%);
     transform: rotate(-90deg);
     z-index: 1;
-}
+} */
 
 #panels-container:not(.icons):not(.overlay) {
     margin-right: calc(var(--radius) / 4);
@@ -53,7 +66,37 @@
     background: var(--colorAccentBg);
 }
 
+.panel-group {
+    transition: border-right 2s ease, width var(--duration) ease-out !important;
+}
+
 .panel-group::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    outline: var(--radius) solid var(--colorAccentBg);
+    z-index: 1;
+    pointer-events: none;
+}
+
+#panels-container:not(.icons):not(.overlay) .panel-group::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: var(--radius);
+    outline: var(--radius) solid var(--colorAccentBg);
+    z-index: 1;
+    pointer-events: none;
+}
+ /* .panel-group::before {
     content: '';
     position: absolute;
     width: var(--radius);
@@ -72,7 +115,7 @@
     background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 70%, var(--colorAccentBg) 73%);
     transform: rotate(90deg);
     z-index: 1;
-}
+} */
 
 .StatusInfo {
     margin-bottom: calc(var(--radius) / 2);
