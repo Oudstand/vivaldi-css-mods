@@ -43,6 +43,9 @@
 
 #panels-container{
     background-color: var(--colorAccentBg) !important;
+}
+
+#panels-container.icons, #panels-container.overlay {
     width: 41px !important;
 }
 
@@ -50,6 +53,10 @@
     background-color: var(--colorBgAlphaBlur) !important;
     margin: .0rem .2rem .5rem .2rem;
     border-radius: var(--radius);
+}
+
+.panel-collapse-guard {
+    min-width: 100% !important;
 }
 
 .panel {
