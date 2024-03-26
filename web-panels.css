@@ -45,6 +45,10 @@
     display: none;
 }
 
+.webpanel-header {
+    background-color: var(--colorBgAlphaBlur);
+}
+
 /* display default icon only #stop */
 
 /* show custom title only #start*/
