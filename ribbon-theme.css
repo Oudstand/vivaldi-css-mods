@@ -12,6 +12,10 @@
     background-size: cover
 }
 
+.UrlBar-AddressField {    
+    background-color: var(--colorBgAlphaBlur);
+}
+
 .tab-strip {
     margin: 1px 0;
 }
