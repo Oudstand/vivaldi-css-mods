@@ -78,7 +78,7 @@
     position: unset;
 }
 
-#header {
+#browser:not(.fullscreen) #header {
     height: 30px;
     min-height: unset !important;
 }

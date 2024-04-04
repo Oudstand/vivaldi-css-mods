@@ -16,6 +16,11 @@
     /* margin-right: .5rem; */
 }
 
+#browser.fullscreen #webpage-stack {
+     margin-left: calc(var(--radius) / 2);
+    /* margin-left: .5rem; */
+}
+
 #webpage-stack::before {
     content: '';
     position: absolute;

@@ -45,7 +45,7 @@
     background-color: var(--colorAccentBg) !important;
 }
 
-#panels-container.icons, #panels-container.overlay {
+#browser:not(.fullscreen) #panels-container.icons, #browser:not(.fullscreen) #panels-container.overlay {
     width: 41px !important;
 }
 
