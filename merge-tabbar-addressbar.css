@@ -1,3 +1,9 @@
+/**
+ * Merge tabbar and addressbar
+ * Forum link: https://forum.vivaldi.net/topic/96664/merge-tabs-and-address-bar
+ * Inspired by: https://forum.vivaldi.net/topic/34187/merge-tabs-and-address-bar
+ */
+
 #tabs-tabbar-container {
     margin-left: calc(26vw + 140px);
     margin-right: 65px;
