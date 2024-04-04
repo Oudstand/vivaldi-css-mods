@@ -74,3 +74,21 @@
 #browser, #header, #tabs-tabbar-container, .tab.active, .mainbar, .bookmark-bar, #main {
     transition: background-color .5s, border-color .5s !important;
 }
+
+#browser {
+    background: var(--colorAccentBg) !important;
+}
+
+footer:has(.toolbar-statusbar) {
+    border-radius: var(--radius);
+    margin: .2rem;
+    background: var(--colorBgAlphaBlur) !important;
+}
+
+footer:has(.toolbar-statusbar) {
+    margin-top: 0;
+}
+
+footer:has(.toolbar-statusbar)::after {
+    display: none;
+}
