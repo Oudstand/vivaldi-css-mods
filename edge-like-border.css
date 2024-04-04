@@ -33,7 +33,7 @@
     pointer-events: none;
 }
 
-#panels-container:not(.icons):not(.overlay) {
+#browser:not(.fullscreen) #panels-container:not(.icons):not(.overlay) {
     margin-right: calc(var(--edge-like-border-radius) / 4);
     padding-right: calc(var(--edge-like-border-radius) / 4);
 }
