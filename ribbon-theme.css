@@ -71,8 +71,8 @@
     background-color: var(--colorBgAlphaBlur);
 }
 
-#browser, #header, #tabs-tabbar-container, .tab.active, .mainbar, .bookmark-bar, #main {
-    transition: background-color .5s, border-color .5s !important;
+#browser, #header, #tabs-tabbar-container, .tab.active, .mainbar, .bookmark-bar, #main, #webpage-stack, #webpage-stack::before, .SlideBar, .panel-group::before, .toolbar-mainbar, #panels-container, .YBDomainButton, .YBDomain::after {
+    transition: background-color .5s, border-color .5s, outline .5s, box-shadow .5s !important;
 }
 
 #browser {
