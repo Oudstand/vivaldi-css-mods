@@ -25,6 +25,7 @@
 }
 
 .UrlBar-AddressField {
+    overflow: hidden;
     width: 27vw;
     transition: width .2s ease-in-out, height .2s ease-in-out, box-shadow 0.2s ease-in-out !important;
 }
@@ -117,6 +118,11 @@
     margin-left: 45vw !important;
     padding: 10px 0 0 0 !important;
     max-width: calc(55vw - 220px) !important;
+}
+
+#browser.popup #pagetitle span {
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 #browser.popup .toolbar-mainbar {
