@@ -25,9 +25,12 @@
 }
 
 .UrlBar-AddressField {
-    overflow: hidden;
     width: 27vw;
     transition: width .2s ease-in-out, height .2s ease-in-out, box-shadow 0.2s ease-in-out !important;
+}
+
+.UrlBar-AddressField:not(:focus-within) {
+    overflow: hidden;
 }
 
 .UrlBar-AddressField:focus-within {
