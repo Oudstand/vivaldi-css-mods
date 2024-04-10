@@ -4,7 +4,7 @@
 }
 
 .inner {
-    padding-top: 0.2rem;
+    padding-top: calc(var(--edge-like-border-radius) / 2);
 }
 
 .startpage {
@@ -28,6 +28,7 @@
 .bookmark-bar {    
     background: var(--colorAccentBg) !important;
     margin: .2rem;
+    margin-bottom: -1px;
 }
 
 .bookmark-bar .observer {
