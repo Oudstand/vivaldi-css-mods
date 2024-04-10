@@ -45,7 +45,7 @@
 
 .mainbar .toolbar-mainbar:not(.toolbar-wrap .toolbar-droptarget) {
     position: absolute;
-    top: 0;
+    transform: translateY(-100%);
     left: 34px !important;
     height: 30px;
     border-radius: 10px;
