@@ -63,3 +63,20 @@
 .dial:hover, #switch .button-toolbar:hover {
     opacity: 1 !important;
 }
+
+
+/* adjust calendar */
+.cal-event-header {
+  color: var(--colorCalendarFg);
+  background: var(--colorCalendarBg);
+  border-radius: calc(var(--radius) / 2);
+}
+
+.all-day {
+    margin-bottom: .5rem;
+}
+
+.all-day .cal-event-header {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
