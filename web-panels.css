@@ -25,7 +25,7 @@
 }
 
 #switch button[name="UpdateButton"] .button-title {
-    display:none;
+    display: none;
 }
 
 
@@ -41,7 +41,7 @@
     margin: 0;
 }
 
-#switch .workspace-popup .button-toolbar-menu-indicator, #switch .workspace-popup .button-title  {
+#switch .workspace-popup .button-toolbar-menu-indicator, #switch .workspace-popup .button-title {
     display: none;
 }
 

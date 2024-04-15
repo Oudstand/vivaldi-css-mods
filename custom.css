@@ -67,9 +67,9 @@
 
 /* adjust calendar */
 .cal-event-header {
-  color: var(--colorCalendarFg);
-  background: var(--colorCalendarBg);
-  border-radius: calc(var(--radius) / 2);
+    color: var(--colorCalendarFg);
+    background: var(--colorCalendarBg);
+    border-radius: calc(var(--radius) / 2);
 }
 
 .all-day {

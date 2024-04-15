@@ -15,7 +15,7 @@
 }
 
 #browser.fullscreen #webpage-stack {
-     margin-left: calc(var(--edge-like-border-radius) / 2);
+    margin-left: calc(var(--edge-like-border-radius) / 2);
 }
 
 #webpage-stack::before {
@@ -38,7 +38,7 @@
     padding-right: calc(var(--edge-like-border-radius) / 4);
 }
 
-#panels-container:not(.icons):not(.overlay) .panel-group  {
+#panels-container:not(.icons):not(.overlay) .panel-group {
     border-top-right-radius: var(--edge-like-border-radius);
     border-bottom-right-radius: var(--edge-like-border-radius);
     border-right: none;

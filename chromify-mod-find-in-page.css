@@ -86,6 +86,7 @@
 .find-in-page .button-toolbar {
     margin: auto !important;
 }
+
 .find-in-page .button-toolbar button {
     border-radius: var(--radiusRounded) !important;
     height: var(--buttonSize);
@@ -94,13 +95,16 @@
     border: none;
     padding: 0;
 }
+
 .find-in-page .button-toolbar button:hover {
     background: var(--colorBgDark);
 }
+
 .find-in-page .button-toolbar button:active {
     background: var(--colorBgDarker);
     box-shadow: none;
 }
+
 .find-in-page .toolbar-group svg {
     transform: rotate(90deg);
 }
