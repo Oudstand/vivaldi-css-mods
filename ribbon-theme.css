@@ -12,12 +12,13 @@
     background-size: cover
 }
 
-.UrlBar-AddressField {
-    background-color: var(--colorBgAlphaBlur);
+#tabs-container {
+    margin-top: 2px;
+    padding-top: 1px;
 }
 
-.tab-strip {
-    margin: 1px 0;
+.UrlBar-AddressField {
+    background-color: var(--colorBgAlphaBlur);
 }
 
 .tab.active .tab-header {
