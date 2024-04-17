@@ -49,7 +49,7 @@
 }
 
 .panel-group {
-    transition: border-right 2s ease, width var(--duration) ease-out !important;
+    transition: border-right .5s ease, width var(--duration) ease-out !important;
 }
 
 .panel-group::before {
