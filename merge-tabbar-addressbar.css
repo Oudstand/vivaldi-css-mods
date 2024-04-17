@@ -75,7 +75,7 @@
 .toolbar-extensions {
     position: absolute !important;
     transform: translate(-100%);
-    left: calc(100vw - 165px) !important;
+    left: calc(100vw - 170px) !important;
     height: 30px !important;
     right: unset !important;
 }
@@ -97,7 +97,7 @@
     height: 34px;
     max-height: 34px;
     width: 34px;
-    margin-top: 5px;
+    margin-top: 6px;
     border-radius: var(--radius) !important;
 }
 
