@@ -1,60 +1,41 @@
+/** removes 1px line between bookmark-bar and switch (container for panels) */
 .bookmark-bar-top .bookmark-bar {
     border: none;
     align-items: baseline;
-    /* removes 1px line between bookmark-bar and switch (container for panels) */
 }
 
+/** adaptes the border of the toolbar buttons to the selected theme */
 .button-toolbar > button {
     border-radius: var(--radius) !important;
-    /* adaptes the border of the toolbar buttons to the selected theme */
 }
 
+/** hides the loading progress */
 .toolbar-insideinput > .pageload > div {
     display: none;
-    /* hides the loading progress */
 }
 
-.bookmark-bar button:hover {
-    border-radius: var(--radius);
-}
-
-/* use correct accent color */
-.tab-indicator.active {
-    background-color: var(--colorAccentBg) !important;
-}
-
-
+/**  removes the border below the mainbar */
 .address-top .mainbar {
     border-bottom: none;
 }
 
+/** sets the active tabs font weight to bold */
 .tab.active {
     font-weight: bold;
 }
 
-#switch {
-    background-color: var(--colorAccentBg);
-}
-
-.tab .close {
-    border-radius: 100%;
-}
-
-.StatusInfo-Content {
+/** adjusts the border radius of the close button of a tab and the status info according to themes settings */
+.tab .close, .StatusInfo-Content {
     border-radius: var(--radius) !important;
 }
 
-.window-maximize {
-    border-radius: 2px;
-}
-
-/* adjust hover effect */
+/** adjust hover effect */
 #switch .button-toolbar {
     border-top-right-radius: var(--radius) !important;
     border-bottom-right-radius: var(--radius) !important;
 }
 
-/* add hover effect to speed dials and web panels */
+/** add hover effect to speed dials and web panels */
 .dial, #switch .button-toolbar:not(.active) {
     opacity: 0.66 !important;
     transition: opacity .25s !important;
@@ -65,7 +46,7 @@
 }
 
 
-/* adjust calendar */
+/** adjust calendar */
 .cal-event-header {
     color: var(--colorCalendarFg);
     background: var(--colorCalendarBg);
