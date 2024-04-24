@@ -4,7 +4,7 @@
  * Inspired by: https://forum.vivaldi.net/topic/34187/merge-tabs-and-address-bar
  */
 
- #header {
+#header {
     .vivaldi {
         height: 34px;
         max-height: 34px;
@@ -70,7 +70,6 @@
     .OmniDropdown {
         margin-top: 0;
     }
-    
 }
 
 .mainbar {

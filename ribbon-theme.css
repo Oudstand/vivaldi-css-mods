@@ -80,8 +80,7 @@
     background-color: var(--colorBgAlphaBlur);
 }
 
-/* prettier-ignore */
-#browser, #header, #tabs-tabbar-container, .tab.active, .mainbar, .bookmark-bar, #main, #webpage-stack, #webpage-stack::before, 
+#browser, #header, #tabs-tabbar-container, .tab.active, .mainbar, .bookmark-bar, #main, #webpage-stack, #webpage-stack::before,
 .SlideBar, .panel-group::before, .toolbar-mainbar, #panels-container, .YBDomainButton, .YBDomain::after, .toolbar-extensions {
     transition: background-color 0.5s, border-color 0.5s, outline 0.5s, box-shadow 0.5s !important;
 }
