@@ -3,53 +3,54 @@
     background-color: var(--colorAccentBg);
 }
 
-#switch .toolbar-divider {
-    height: 4px !important;
-    max-width: 20px;
-    margin: 5px;
-    border-radius: 10px !important;
-    background: gray !important;
-}
+#switch {
+    .toolbar-divider {
+        height: 4px !important;
+        max-width: 20px;
+        margin: 5px;
+        border-radius: 10px !important;
+        background: gray !important;
 
-#switch .toolbar-divider button {
-    display: none;
-}
+        button {
+            display: none;
+        }
+    }
 
-#switch .toolbar-spacer {
-    height: 10px !important;
-    flex: 0 !important;
+    .toolbar-spacer {
+        height: 10px !important;
+        flex: 0 !important;
+    }
+
+    button[name='UpdateButton'] .button-title {
+        display: none;
+    }
+
+    .workspace-popup {
+        /* style workspace button */
+        button {
+            opacity: 1;
+            margin: 0;
+            padding: 0;
+        }
+
+        svg {
+            margin: 0;
+        }
+
+        .button-toolbar-menu-indicator,
+        .button-title {
+            display: none;
+        }
+    }
 }
 
 .webpanel {
     background-color: var(--colorAccentBg);
 }
 
-#switch button[name="UpdateButton"] .button-title {
-    display: none;
-}
-
-
-/* style workspace button */
-#switch .workspace-popup button {
-    opacity: 1;
-    margin: 0;
-    padding: 0;
-}
-
-/* display default icon only #start */
-#switch .workspace-popup svg {
-    margin: 0;
-}
-
-#switch .workspace-popup .button-toolbar-menu-indicator, #switch .workspace-popup .button-title {
-    display: none;
-}
-
 .webpanel-header {
     background-color: var(--colorBgAlphaBlur);
 }
-
-/* display default icon only #stop */
 
 /* show custom title only #start*/
 /*#switch .workspace-popup svg {

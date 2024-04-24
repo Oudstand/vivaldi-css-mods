@@ -8,12 +8,12 @@
 }
 
 .startpage {
-    background-image: url("chrome://vivaldi-data/thumbnail/MDOR2SEXJHA3SZDYNDXIRP2LSPGNTSAD.png");
-    background-size: cover
+    background-image: url('chrome://vivaldi-data/thumbnail/MDOR2SEXJHA3SZDYNDXIRP2LSPGNTSAD.png');
+    background-size: cover;
 }
 
 .window-buttongroup {
-    margin-top: 3px ;
+    margin-top: 3px;
 }
 
 #tabs-container {
@@ -32,32 +32,35 @@
 
 .bookmark-bar {
     background: var(--colorAccentBg) !important;
-    margin: .2rem;
+    margin: 0.2rem;
     margin-bottom: -1px;
-}
 
-.bookmark-bar .observer {
-    width: 100%;
-    margin: 0 .25rem !important;
-    border-radius: var(--radius) !important;
-    background: var(--colorBgAlphaBlur) !important;
-}
+    .observer {
+        width: 100%;
+        margin: 0 0.25rem !important;
+        border-radius: var(--radius) !important;
+        background: var(--colorBgAlphaBlur) !important;
 
-.bookmark-bar .observer button {
-    border-radius: var(--radius);
+        button {
+            border-radius: var(--radius);
+        }
+    }
 }
 
 #panels-container {
     background-color: var(--colorAccentBg) !important;
 }
 
-#browser:not(.fullscreen) #panels-container.icons, #browser:not(.fullscreen) #panels-container.overlay {
-    width: 41px !important;
+#browser:not(.fullscreen) #panels-container {
+    &.icons,
+    &.overlay {
+        width: 41px !important;
+    }
 }
 
 #switch {
     background-color: var(--colorBgAlphaBlur) !important;
-    margin: .0rem .2rem .5rem .2rem;
+    margin: 0rem 0.2rem 0.5rem 0.2rem;
     border-radius: var(--radius);
 }
 
@@ -77,8 +80,23 @@
     background-color: var(--colorBgAlphaBlur);
 }
 
-#browser, #header, #tabs-tabbar-container, .tab.active, .mainbar, .bookmark-bar, #main, #webpage-stack, #webpage-stack::before, .SlideBar, .panel-group::before, .toolbar-mainbar, #panels-container, .YBDomainButton, .YBDomain::after, .toolbar-extensions {
-    transition: background-color .5s, border-color .5s, outline .5s, box-shadow .5s !important;
+#browser,
+#header,
+#tabs-tabbar-container,
+.tab.active,
+.mainbar,
+.bookmark-bar,
+#main,
+#webpage-stack,
+#webpage-stack::before,
+.SlideBar,
+.panel-group::before,
+.toolbar-mainbar,
+#panels-container,
+.YBDomainButton,
+.YBDomain::after,
+.toolbar-extensions {
+    transition: background-color 0.5s, border-color 0.5s, outline 0.5s, box-shadow 0.5s !important;
 }
 
 #browser {
@@ -87,14 +105,14 @@
 
 footer:has(.toolbar-statusbar) {
     border-radius: var(--radius);
-    margin: .2rem;
+    margin: 0.2rem;
     background: var(--colorBgAlphaBlur) !important;
+
+    &::after {
+        display: none;
+    }
 }
 
 footer:has(.toolbar-statusbar) {
     margin-top: 0;
-}
-
-footer:has(.toolbar-statusbar)::after {
-    display: none;
 }

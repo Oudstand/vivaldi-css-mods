@@ -4,23 +4,24 @@
 
 .tab {
     border-radius: var(--radiusHalf) !important;
-}
 
-.tab.active {
-    background: var(--colorTabBar, transparent) !important;
-}
+    &.active {
+        background: var(--colorTabBar, transparent) !important;
 
-.tab.active:before, .tab.active:after {
-    display: none !important;
-}
-
-.tab-indicator.active {
-    background-color: var(--colorHighlightFgAlpha) !important;
-    border-bottom-width: 3px !important;
+        &:before,
+        &:after {
+            display: none !important;
+        }
+    }
 }
 
 .tab-indicator {
     background-color: var(--colorHighlightFgAlphaHeavy) !important;
+
+    &.active {
+        background-color: var(--colorHighlightFgAlpha) !important;
+        border-bottom-width: 3px !important;
+    }
 }
 
 .UrlBar-AddressField {

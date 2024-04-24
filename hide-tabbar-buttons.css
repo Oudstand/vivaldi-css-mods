@@ -1,3 +1,7 @@
 .toggle-trash {
-  display: none !important; /* Hide the trashbin icon (closed tabs) */
+    display: none !important; /* Hide the trashbin icon (closed tabs) */
+}
+
+.synced-tabs-button {
+    display: none;
 }

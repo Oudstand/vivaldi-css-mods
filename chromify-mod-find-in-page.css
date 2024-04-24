@@ -2,109 +2,113 @@
 /* --- Chrome like search panel --- */
 
 /* Main bar */
-.find-in-page.toolbar-default {
-    --baseWidth: 29em;
-    --baseHeight: 3.25em;
-    --separatorHeight: calc(var(--baseHeight) * 0.6);
-    --buttonSize: calc(var(--baseHeight) * 0.75);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: var(--colorBorder);
-    border: 1px solid var(--colorBorder);
-    border-radius: .75rem;
-    min-width: var(--baseWidth);
-    height: var(--baseHeight);
-    position: absolute;
-    overflow: hidden;
-    margin: 1em 2.5em;
-    padding: 0 .5em;
-    z-index: 1;
-    width: 0;
-    right: 0;
-    top: 0;
-}
+.find-in-page {
+    &.toolbar-default {
+        --baseWidth: 29em;
+        --baseHeight: 3.25em;
+        --separatorHeight: calc(var(--baseHeight) * 0.6);
+        --buttonSize: calc(var(--baseHeight) * 0.75);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        background-color: var(--colorBorder);
+        border: 1px solid var(--colorBorder);
+        border-radius: 0.75rem;
+        min-width: var(--baseWidth);
+        height: var(--baseHeight);
+        position: absolute;
+        overflow: hidden;
+        margin: 1em 2.5em;
+        padding: 0 0.5em;
+        z-index: 1;
+        width: 0;
+        right: 0;
+        top: 0;
+    }
 
-/* Make the bar centered at the top of pages */
-/* Uncomment to enable */
-/*
-.find-in-page.toolbar-default {
-    margin-right: auto;
-    margin-left: auto;
-    left: 0;
-}
-*/
+    /* Hide stuff */
+    hr,
+    .fip-input-label,
+    input[type='checkbox'],
+    .fip-checkbox-label,
+    .fip-input-container input[type='search']::-webkit-search-cancel-button {
+        /* The little blue "x" inside of non-empty input field */
+        display: none;
+    }
 
-/* Hide stuff */
-.find-in-page hr, /* Separator between next/prev buttons */
-.find-in-page .fip-input-label, /* "Find in Page" label */
-.find-in-page input[type="checkbox"], .find-in-page .fip-checkbox-label, /* "Match Case" checkbox */
-.find-in-page .fip-input-container input[type=search]::-webkit-search-cancel-button { /* The little blue "x" inside of non-empty input field */
-    display: none;
-}
+    /* Indent on the right side of the input field (to prevent counter overlapping text) */
+    /* Is needed because the little blue "x" is hidden */
+    .fip-input-container input[type='search']::-webkit-textfield-decoration-container {
+        -webkit-margin-end: 3.5em;
+    }
 
-/* Indent on the right side of the input field (to prevent counter overlapping text) */
-/* Is needed because the little blue "x" is hidden */
-.find-in-page .fip-input-container input[type=search]::-webkit-textfield-decoration-container {
-    -webkit-margin-end: 3.5em;
-}
+    .fip-input-container {
+        padding-left: 18px;
 
-.find-in-page .fip-input-container {
-    padding-left: 18px;
-}
+        /* Make the input field big and flat */
+        input[type='search'] {
+            border-radius: 7px;
+            background: none;
+            box-shadow: none;
+            margin-bottom: 0;
+            height: 100%;
+            border: none;
 
-/* Make the input field big and flat */
-.find-in-page .fip-input-container input[type=search] {
-    border-radius: 7px;
-    background: none;
-    box-shadow: none;
-    margin-bottom: 0;
-    height: 100%;
-    border: none;
-}
+            &:focus-visible {
+                outline-color: var(--colorBgLight);
+            }
+        }
 
-.find-in-page .fip-input-container input[type=search]:focus-visible {
-    outline-color: var(--colorBgLight);
-}
+        /* Center the counter */
+        .fip-results:not([style='display: none;']) {
+            display: flex !important;
+            align-items: center;
+            height: 100%;
+            right: 1.25em;
+            top: 0;
+        }
 
-/* Center the counter */
-.find-in-page .fip-input-container .fip-results:not([style="display: none;"]) {
-    display: flex !important;
-    align-items: center;
-    height: 100%;
-    right: 1.25em;
-    top: 0;
-}
+        /* Separator between input field and buttons */
+        &::after {
+            border-left: 1px solid var(--colorBorder);
+            height: var(--separatorHeight);
+            margin-right: 0.5em;
+            content: '';
+        }
+    }
 
-/* Separator between input field and buttons */
-.find-in-page .fip-input-container::after {
-    border-left: 1px solid var(--colorBorder);
-    height: var(--separatorHeight);
-    margin-right: .5em;
-    content: '';
-}
+    /* Buttons design */
+    .button-toolbar {
+        margin: auto !important;
 
-/* Buttons design */
-.find-in-page .button-toolbar {
-    margin: auto !important;
-}
+        button {
+            border-radius: var(--radiusRounded) !important;
+            height: var(--buttonSize);
+            width: var(--buttonSize);
+            background: none;
+            border: none;
+            padding: 0;
 
-.find-in-page .button-toolbar button {
-    border-radius: var(--radiusRounded) !important;
-    height: var(--buttonSize);
-    width: var(--buttonSize);
-    background: none;
-    border: none;
-    padding: 0;
-}
+            &:hover {
+                background: var(--colorBgDark);
+            }
 
-.find-in-page .button-toolbar button:hover {
-    background: var(--colorBgDark);
-}
+            &:active {
+                background: var(--colorBgDarker);
+                box-shadow: none;
+            }
+        }
+    }
 
-.find-in-page .button-toolbar button:active {
-    background: var(--colorBgDarker);
-    box-shadow: none;
-}
+    .toolbar-group svg {
+        transform: rotate(90deg);
+    }
 
-.find-in-page .toolbar-group svg {
-    transform: rotate(90deg);
+    /* Make the bar centered at the top of pages */
+    /* Uncomment to enable */
+    /*
+        &.toolbar-default {
+            margin-right: auto;
+            margin-left: auto;
+            left: 0;
+        }
+    */
 }

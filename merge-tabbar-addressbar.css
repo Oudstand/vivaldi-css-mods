@@ -4,11 +4,33 @@
  * Inspired by: https://forum.vivaldi.net/topic/34187/merge-tabs-and-address-bar
  */
 
-#tabs-tabbar-container {
-    margin-left: calc(26vw + 140px);
-    margin-right: 65px;
-    transition: all .75s;
-    padding-top: 0 !important;
+ #header {
+    .vivaldi {
+        height: 34px;
+        max-height: 34px;
+        width: 34px;
+        margin-top: 6px;
+        border-radius: var(--radius) !important;
+
+        &:hover {
+            background-color: var(--colorAccentBgDark) !important;
+        }
+
+        .expand-arrow {
+            display: none;
+        }
+    }
+
+    .window-buttongroup {
+        height: 35px;
+    }
+
+    #tabs-tabbar-container {
+        margin-left: calc(26vw + 140px);
+        margin-right: 65px;
+        transition: all 0.75s;
+        padding-top: 0 !important;
+    }
 }
 
 #browser:has(.toolbar-mailbar:not(.toolbar-hidden)) #tabs-tabbar-container {
@@ -16,72 +38,70 @@
     margin-right: 0;
 }
 
-.win.normal .tab-group-indicator {
-    top: -2px;
-}
+.win.normal {
+    .tab-group-indicator {
+        top: -2px;
+    }
 
-.win.normal #titlebar:not(.tabless) {
-    top: -5px;
+    #titlebar:not(.tabless) {
+        top: -5px;
+    }
+
+    .mainbar .toolbar-mainbar {
+        left: unset;
+        right: unset;
+    }
 }
 
 .UrlBar-AddressField {
     width: 27vw;
-    transition: width .2s ease-in-out, height .2s ease-in-out, box-shadow 0.2s ease-in-out !important;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
+
+    &:not(:focus-within) {
+        overflow: hidden;
+    }
+
+    &:focus-within {
+        width: 40vw !important;
+        height: 30px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    .OmniDropdown {
+        margin-top: 0;
+    }
+    
 }
 
-.UrlBar-AddressField:not(:focus-within) {
-    overflow: hidden;
-}
+.mainbar {
+    .toolbar-mainbar {
+        border-bottom: none !important;
 
-.UrlBar-AddressField:focus-within {
-    width: 40vw !important;
-    height: 30px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
+        &:not(.toolbar-wrap .toolbar-droptarget) {
+            position: absolute;
+            transform: translateY(-100%);
+            left: 34px !important;
+            height: 30px;
+            border-radius: 10px;
+        }
 
-.OmniDropdown {
-    margin-top: -3px;
-}
+        .toolbar-extensions {
+            position: absolute !important;
+            transform: translate(-100%);
+            left: calc(100vw - 170px) !important;
+            height: 30px !important;
+            right: unset !important;
+        }
+    }
 
-.mainbar .toolbar-mainbar:not(.toolbar-wrap .toolbar-droptarget) {
-    position: absolute;
-    transform: translateY(-100%);
-    left: 34px !important;
-    height: 30px;
-    border-radius: 10px;
-}
+    .toolbar-mainbar::before,
+    .toolbar-extensions::before {
+        display: none;
+    }
 
-.mainbar .toolbar-mainbar {
-    border-bottom: none !important;
-}
-
-.mainbar .toolbar-mainbar::before, .mainbar .toolbar-extensions::before {
-    display: none;
-}
-
-.win.normal .mainbar .toolbar-mainbar {
-    left: unset;
-    right: unset;
-}
-
-.mainbar .toolbar-mailbar {
-    width: 45rem;
-}
-
-.toolbar-mailbar .button-toolbar[title*="Seite"] {
-    display: none;
-}
-
-.toolbar-extensions {
-    position: absolute !important;
-    transform: translate(-100%);
-    left: calc(100vw - 170px) !important;
-    height: 30px !important;
-    right: unset !important;
-}
-
-.window-buttongroup {
-    height: 35px;
+    .toolbar-mailbar {
+        width: 45rem;
+    }
 }
 
 #browser:not(.is-settingspage) #main {
@@ -93,53 +113,42 @@
     min-height: unset !important;
 }
 
-.vivaldi {
-    height: 34px;
-    max-height: 34px;
-    width: 34px;
-    margin-top: 6px;
-    border-radius: var(--radius) !important;
-}
+#browser.popup {
+    #header,
+    #titlebar,
+    #pagetitle {
+        height: 35px !important;
+    }
 
-.vivaldi:hover {
-    background-color: var(--colorAccentBgDark) !important;
-}
+    #pagetitle {
+        margin-left: 45vw !important;
+        padding: 5px 0 0 0 !important;
+        max-width: calc(55vw - 220px) !important;
 
-.vivaldi .expand-arrow {
-    display: none;
-}
+        span {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
 
-#browser.popup #header {
-    height: 35px !important;
-}
+    .toolbar-mainbar {
+        left: 10px !important;
+    }
 
-#browser.popup .UrlBar-AddressField {
-    background-color: var(--colorBgLightIntense);
-}
+    .UrlBar-AddressField {
+        width: 40vw !important;
+        background-color: var(--colorBgLightIntense);
 
-#browser.popup #pagetitle {
-    margin-left: 45vw !important;
-    padding: 10px 0 0 0 !important;
-    max-width: calc(55vw - 220px) !important;
-}
+        &:focus-within {
+            width: 50vw !important;
+        }
+    }
 
-#browser.popup #pagetitle span {
-    margin: 0 auto;
-    max-width: 100%;
-}
+    .window-buttongroup button {
+        height: 35px !important;
+    }
 
-#browser.popup .toolbar-mainbar {
-    left: 10px !important;
-}
-
-#browser.popup .UrlBar-AddressField, #browser.popu .UrlBar-AddressField:focus-within {
-    width: 40vw !important;
-}
-
-#browser.popup .window-buttongroup button {
-    height: 35px !important;
-}
-
-#browser.popup .toolbar-extensions {
-    left: calc(100vw - 150px) !important;
+    toolbar-extensions {
+        left: calc(100vw - 150px) !important;
+    }
 }
