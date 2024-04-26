@@ -102,3 +102,7 @@ footer:has(.toolbar-statusbar) {
 footer:has(.toolbar-statusbar) {
     margin-top: 0;
 }
+
+.find-in-page-wrapper {
+    background-color: var(--colorBgAlphaBlur);
+}
