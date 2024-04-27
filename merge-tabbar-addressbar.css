@@ -53,6 +53,10 @@
     }
 }
 
+.win.maximized #header .vivaldi {
+    margin-top: 0;
+}
+
 .UrlBar-AddressField {
     width: 27vw;
     transition: width 0.2s ease-in-out, height 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
