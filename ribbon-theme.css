@@ -1,3 +1,7 @@
+#app {
+    --background-image: url("chrome://vivaldi-data/local-image/CM4HG3WZRE35V6LF4SX5LNZ2S6PC5ZV5.png");
+}
+
 #main {
     background-color: var(--colorAccentBg);
     padding-top: 0.1rem;
@@ -8,7 +12,7 @@
 }
 
 .startpage {
-    background-image: url("chrome://vivaldi-data/local-image/KXDTZI7XGHAQLI5QQ3VFKSRU72SLWRQG.png");
+    background-image: var(--background-image);
     background-size: cover;
 }
 
