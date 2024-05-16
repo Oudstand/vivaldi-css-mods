@@ -30,7 +30,6 @@
 }
 
 .tab.active .tab-header {
-    margin: -0px;
     background-color: var(--colorBgAlphaBlur) !important;
 }
 
