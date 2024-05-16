@@ -1,7 +1,6 @@
 /** removes 1px line between bookmark-bar and switch (container for panels) */
 .bookmark-bar-top .bookmark-bar {
     border: none;
-    align-items: baseline;
 }
 
 /** adaptes the border of the toolbar buttons to the selected theme */
