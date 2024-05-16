@@ -37,11 +37,9 @@
 .bookmark-bar {
     background: var(--colorAccentBg) !important;
     margin: 0.2rem;
-    margin-bottom: -1px;
+    margin-bottom: 0px;
 
     .observer {
-        width: 100%;
-        margin: 0 0.25rem !important;
         border-radius: var(--radius) !important;
         background: var(--colorBgAlphaBlur) !important;
 
