@@ -8,7 +8,7 @@
 }
 
 .bookmark-bar-top-off .inner {
-    padding-top: calc(var(--edge-like-border-radius) / 5);
+    padding-top: calc(var(--edge-like-border-radius) / 4);
 }
 
 .inner {
