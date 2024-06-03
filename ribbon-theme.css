@@ -7,6 +7,10 @@
     padding-top: 0.1rem;
 }
 
+.bookmark-bar-top-off .inner {
+    padding-top: calc(var(--edge-like-border-radius) / 5);
+}
+
 .inner {
     padding-top: calc(var(--edge-like-border-radius) / 2);
 }
