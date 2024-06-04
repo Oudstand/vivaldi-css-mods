@@ -52,6 +52,12 @@
     background-color: var(--colorBgAlphaBlur);
 }
 
+#browser:not(.toolbar-edit-mode) {
+    .button-toolbar:has(button[title="automate-bookmark-bar"]) {
+        display: none;
+    }
+}
+
 /* show custom title only #start*/
 /*#switch .workspace-popup svg {
     display: none;

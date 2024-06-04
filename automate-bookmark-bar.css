@@ -2,7 +2,7 @@
 * Simple Automate Bookmark-bar
 * Forum link: https://forum.vivaldi.net/topic/64142/simple-automate-bookmark-bar-css-mod
 */
-#app:not(.fullscreen-listener-enabled) {
+#app:not(.fullscreen-listener-enabled):has(#switch button[title="automate-bookmark-bar"]) {
     .bookmark-bar-top:not(:has(.toolbar-editor)) .bookmark-bar {
         margin-bottom: -35px;
         z-index: 4;
