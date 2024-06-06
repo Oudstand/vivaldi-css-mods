@@ -9,7 +9,7 @@
         height: 34px;
         max-height: 34px;
         width: 34px;
-        margin-top: 6px;
+        margin-top: 3px;
         border-radius: var(--radius) !important;
 
         &:hover {

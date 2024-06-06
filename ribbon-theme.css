@@ -2,9 +2,13 @@
     --background-image: url("chrome://vivaldi-data/local-image/KXDTZI7XGHAQLI5QQ3VFKSRU72SLWRQG.png"); /* set your image url */
 }
 
+.vivaldi {
+    padding-top: 0.5rem;
+}
+
 #main {
     background-color: var(--colorAccentBg);
-    padding-top: 0.1rem;
+    padding-top: 0.25rem;
 }
 
 .bookmark-bar-top-off .inner {
@@ -25,8 +29,7 @@
 }
 
 #tabs-container {
-    margin-top: 2px;
-    padding-top: 1px;
+    margin-top: 0.25rem;
 }
 
 .UrlBar-AddressField {
