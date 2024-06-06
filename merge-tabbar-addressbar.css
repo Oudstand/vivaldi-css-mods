@@ -7,9 +7,9 @@
 #header {
     .vivaldi {
         height: 34px;
-        max-height: 34px;
         width: 34px;
         margin-top: 3px;
+        padding: 0;
         border-radius: var(--radius) !important;
 
         &:hover {

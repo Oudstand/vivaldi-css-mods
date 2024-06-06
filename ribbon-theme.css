@@ -2,8 +2,8 @@
     --background-image: url("chrome://vivaldi-data/local-image/KXDTZI7XGHAQLI5QQ3VFKSRU72SLWRQG.png"); /* set your image url */
 }
 
-.vivaldi {
-    padding-top: 0.5rem;
+#header .vivaldi {
+    margin-top: 0.45rem;
 }
 
 #main {
