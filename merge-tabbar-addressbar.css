@@ -136,6 +136,7 @@
 
     .toolbar-mainbar {
         left: 10px !important;
+        padding-bottom: 0.5rem;
     }
 
     .UrlBar-AddressField {
@@ -151,7 +152,7 @@
         height: 35px !important;
     }
 
-    toolbar-extensions {
+    .toolbar-extensions {
         left: calc(100vw - 150px) !important;
     }
 }
