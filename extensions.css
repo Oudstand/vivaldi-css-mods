@@ -8,7 +8,7 @@
 button[title="Speed Dial Generator"], button[title="Modern scrollbar"], button[title="Charcoal: Dark Mode for Messenger"],
 button[title="Cookie Notice Blocker"], button[title="Angular DevTools"], button[title="Vivaldi Forum mod"], button[title="Scrollbar of Contents"],
 button[title="datacy"], button[title*="Coupert"], button[title="PayPal Honey"], button[title="Tampermonkey"],
-button[title^="Acrobat"], button[title^="Violentmonkey"] {
+button[title^="Acrobat"], button[title^="Violentmonkey"], button[title="Custom Scrollbars"] {
     /* hides the extensions of the given title */
     display: none !important;
 }
