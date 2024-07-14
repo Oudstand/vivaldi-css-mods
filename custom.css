@@ -18,9 +18,9 @@
     border-bottom: none;
 }
 
-/** sets the active tabs font weight to bold */
 .tab.active {
-    font-weight: bold;
+    font-weight: bold; /** sets the active tabs font weight to bold */
+    overflow: hidden !important;
 }
 
 /** adjusts the border radius of the close button of a tab and the status info according to themes settings */
