@@ -1,0 +1,92 @@
+@keyframes dialog-tab-animate-progress-bar {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.dialog-container {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    backdrop-filter: blur(1px);
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .dialog-tab {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        .options-container {
+            height: 35px;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            color: white;
+            z-index: 1160;
+
+            .options-button {
+                background: transparent;
+                margin: 0 0.5rem 0 0.5rem;
+                border: unset;
+                cursor: pointer;
+            }
+
+            .dialog-input {
+                background: var(--colorAccentBgAlpha); 
+                color: white;
+                border: unset;
+                width: 20%;
+                margin: 0 0.5rem 0 0.5rem;
+                padding: 0.25rem 0.5rem;
+            }
+        }
+
+        .progress-bar {
+            height: 5px;
+            max-width: calc(100% - var(--radius) * 2);
+            margin: 0 calc(var(--radius) / 2);
+            background-color: #0080ff;
+            border-radius: var(--radius);
+            transition: width 0.2s linear;
+            overflow: hidden;
+            position: relative;
+
+            &[style*="width: 100%"]:after {
+                content: "";
+                width: 50%;
+                height: 100%;
+                background-image: linear-gradient(
+                    to right,
+                    rgba(255, 255, 255, 0.5),
+                    rgba(255, 255, 255, 0.8),
+                    rgba(255, 255, 255, 0.5)
+                );
+                position: absolute;
+                top: 0;
+                left: -100%;
+                animation: dialog-tab-animate-progress-bar 1.5s linear infinite;
+            }
+        }
+
+        webview {
+            position: relative;
+            flex: 1;
+            overflow: hidden;
+            border-radius: var(--radius);
+        }
+    }
+}
