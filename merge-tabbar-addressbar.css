@@ -9,6 +9,7 @@
         height: 34px;
         width: 34px;
         margin-top: 3px;
+        margin-left: 3px;
         padding: 0;
         border-radius: var(--radius) !important;
 
@@ -83,7 +84,7 @@
         &:not(.toolbar-wrap .toolbar-droptarget) {
             position: absolute;
             transform: translateY(-100%);
-            left: 34px !important;
+            left: 40px !important;
             height: 30px;
             border-radius: 10px;
         }
