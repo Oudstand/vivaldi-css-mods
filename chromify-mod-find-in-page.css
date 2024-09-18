@@ -4,8 +4,8 @@
 /* Main bar */
 .find-in-page {
     &.toolbar-default {
-        --baseWidth: 29em;
-        --baseHeight: 3.25em;
+        --baseWidth: 27em;
+        --baseHeight: 3em;
         --separatorHeight: calc(var(--baseHeight) * 0.6);
         --buttonSize: calc(var(--baseHeight) * 0.75);
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -41,15 +41,14 @@
     }
 
     .fip-input-container {
-        padding-left: 18px;
-
         /* Make the input field big and flat */
         input[type='search'] {
             border-radius: 7px;
             background: none;
             box-shadow: none;
             margin-bottom: 0;
-            height: 100%;
+            margin-left: 0.5em;
+            height: 24px;
             border: none;
 
             &:focus-visible {
@@ -58,32 +57,32 @@
         }
 
         /* Center the counter */
-        .fip-results:not([style='display: none;']) {
+        .fip-results:not([
+            style='display: none;']) {
             display: flex !important;
             align-items: center;
             height: 100%;
-            right: 1.25em;
+            right: 2em;
             top: 0;
         }
 
         /* Separator between input field and buttons */
         &::after {
-            border-left: 1px solid var(--colorBorder);
+            border-left: 1px solid var(--colorAccentFgAlpha);
             height: var(--separatorHeight);
-            margin-right: 0.5em;
+            margin: 0 0.5em;
             content: '';
         }
     }
 
     /* Buttons design */
     .button-toolbar {
-        margin: auto !important;
-
         button {
-            border-radius: var(--radiusRounded) !important;
+            border-radius: var(--radius) !important;
             height: var(--buttonSize);
             width: var(--buttonSize);
             background: none;
+            background-image: none !important;
             border: none;
             padding: 0;
 
@@ -101,14 +100,4 @@
     .toolbar-group svg {
         transform: rotate(90deg);
     }
-
-    /* Make the bar centered at the top of pages */
-    /* Uncomment to enable */
-    /*
-        &.toolbar-default {
-            margin-right: auto;
-            margin-left: auto;
-            left: 0;
-        }
-    */
 }
