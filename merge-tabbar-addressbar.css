@@ -92,7 +92,7 @@
         .toolbar-extensions {
             position: absolute !important;
             transform: translate(-100%);
-            left: calc(100vw - 170px) !important;
+            left: calc(100vw - 180px) !important;
             height: 30px !important;
             right: unset !important;
         }
