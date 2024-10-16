@@ -2,34 +2,24 @@
 * Simple Automate Bookmark-bar
 * Forum link: https://forum.vivaldi.net/topic/64142/simple-automate-bookmark-bar-css-mod
 */
-#app:not(.fullscreen-listener-enabled):has(#switch button[title="automate-bookmark-bar"]) {
-    .bookmark-bar-top:not(:has(.toolbar-editor)) .bookmark-bar {
+#app:not(.fullscreen-listener-enabled):has(#switch button[title="automate-bookmark-bar"]) .bookmark-bar-top:not(:has(.toolbar-editor)) {
+    .bookmark-bar {
         margin-bottom: -35px;
         z-index: 4;
         transform: translateY(0);
         transition: transform .45s ease-out .25s, opacity .45s ease-out .25s !important;
         padding-bottom: 5px;
     }
-    .bookmark-bar-top:not(:has(.toolbar-editor)) .bookmark-bar::before {
+    .bookmark-bar::before {
         content: '';
         position: absolute;
         height: 10px;
         width: 100%;
         top: 100%;
     }
-    
-    /* A. trigger zone below lowest TOP bar */
-    .bookmark-bar-top:not(:has(.toolbar-editor)) .bookmark-bar:not(:focus-within):not(:hover) {
+    .bookmark-bar:not(:focus-within):not(:hover) {
         transform: translateY(-120%);
         opacity: 0;
         transition: transform .45s 0s, opacity .45s 0s !important;
     }
-
-    /* B. trigger by focus/mouseover header, tabbar, or Mainbar */
-    /*.address-top.bookmark-bar-top:not(:has(.toolbar-editor, #header:hover, .toolbar-mainbar:hover)) .bookmark-bar:not(:focus-within):not(:hover), 
-    :not(.address-top).bookmark-bar-top:not(:has(.toolbar-editor)) #header:not(:hover) ~ #main > .bookmark-bar:not(:focus-within):not(:hover) {
-        transform: translateY(-120%);
-        opacity: 0;
-        transition: transform .45s 0s, opacity .45s 0s !important;
-    }*/
 }
