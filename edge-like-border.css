@@ -35,6 +35,10 @@
             }
         }
 
+        #switch {
+            margin-bottom: calc(var(--edge-like-border-radius) / 2);
+        }
+
         #panels-container {
             &:not(.icons):not(.overlay) .panel-group {
                 border-top-right-radius: var(--edge-like-border-radius);
