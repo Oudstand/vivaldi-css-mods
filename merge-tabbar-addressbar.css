@@ -28,7 +28,6 @@
 
     #tabs-tabbar-container {
         margin-left: calc(26vw + 140px);
-        margin-right: 65px;
         transition: all 0.75s;
         padding-top: 0 !important;
     }
@@ -131,6 +130,7 @@
     #tabs-tabbar-container {
         padding-top: 3px !important;
         padding-bottom: 3px !important;
+        padding-right: 30px;
     }
 
     #header .vivaldi {
