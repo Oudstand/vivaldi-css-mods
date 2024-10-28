@@ -117,6 +117,35 @@
     min-height: unset !important;
 }
 
+.density-on {
+    &#browser:not(.fullscreen) #header, .vivaldi {
+        height: calc(36px / var(--uiZoomLevel));
+    }
+
+    .toolbar-mainbar {
+        &:not(.toolbar-wrap .toolbar-droptarget), .toolbar-extensions {
+            height: 36px !important;
+        }
+    }
+
+    #tabs-tabbar-container {
+        padding-top: 3px !important;
+        padding-bottom: 3px !important;
+    }
+
+    #header .vivaldi {
+        margin-top: 6px;
+    }
+
+    .window-buttongroup {
+        height: 40px !important;
+    }
+
+    .mainbar {
+        padding: 0 !important;
+    }
+}
+
 #browser.popup {
     #header,
     #titlebar,
@@ -157,3 +186,4 @@
         left: calc(100vw - 150px) !important;
     }
 }
+
