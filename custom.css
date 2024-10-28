@@ -3,6 +3,11 @@
     border: none;
 }
 
+/** removes thin line below tabs */
+#tabs-tabbar-container {
+    box-shadow: none !important;
+}
+
 /** adaptes the border of the toolbar buttons to the selected theme */
 .button-toolbar > button {
     border-radius: var(--radius) !important;
