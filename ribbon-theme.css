@@ -60,9 +60,14 @@
 }
 
 #browser:not(.fullscreen) #panels-container {
-    &.icons,
-    &.overlay {
+    &.icons, &.overlay {
         width: 41px !important;
+    }
+}
+
+#browser:not(.fullscreen).density-on #panels-container {
+    &.icons, &.overlay {
+        width: 46px !important;
     }
 }
 
