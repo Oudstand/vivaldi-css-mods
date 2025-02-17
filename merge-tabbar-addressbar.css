@@ -61,10 +61,6 @@
     width: 27vw;
     transition: width 0.2s ease-in-out, height 0.2s ease-in-out, margin-top 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
 
-    &:not(:focus-within) {
-        overflow: hidden;
-    }
-
     &:focus-within {
         width: 40vw !important;
         height: 30px;
