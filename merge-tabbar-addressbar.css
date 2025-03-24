@@ -184,3 +184,13 @@
     }
 }
 
+/* correct positioning for fullscreen mod */
+.fullscreen-listener-enabled {
+    #header .vivaldi {
+        margin-top: 5px !important;
+    }
+
+    .mainbar .toolbar-mainbar:not(.toolbar-wrap .toolbar-droptarget) {
+        transform: translateY(-90%);
+    }
+}
