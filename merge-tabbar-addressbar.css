@@ -34,8 +34,8 @@
 }
 
 #browser:has(.toolbar-mailbar:not(.toolbar-hidden)) #tabs-tabbar-container {
-    margin-left: 47rem;
-    margin-right: 0;
+    margin-left: 40rem;
+    margin-right: -5rem;
 }
 
 .win.normal {
@@ -100,7 +100,7 @@
     }
 
     .toolbar-mailbar {
-        width: 45rem;
+        width: 40rem;
     }
 }
 
