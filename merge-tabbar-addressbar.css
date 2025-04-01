@@ -34,7 +34,7 @@
 }
 
 #browser:has(.toolbar-mailbar:not(.toolbar-hidden)) #tabs-tabbar-container {
-    margin-left: 40rem;
+    margin-left: max(25vw, 40rem);
     margin-right: -5rem;
 }
 
@@ -100,7 +100,7 @@
     }
 
     .toolbar-mailbar {
-        width: 40rem;
+        width: max(25vw, 40rem);
     }
 }
 
