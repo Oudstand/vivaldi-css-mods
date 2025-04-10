@@ -19,7 +19,7 @@
     transition-duration: 0.1s;
     transition-timing-function: ease;
     transition-delay: 0s;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(2px);
     border-radius: var(--radius);
     display: flex;
     justify-content: center;
@@ -31,18 +31,28 @@
         flex-direction: column;
 
         .options-container {
+            display: flex;
             height: 35px;
-            width: 100%;
             text-align: center;
             align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
             color: white;
             z-index: 1160;
 
             .options-button {
+                display: flex;
                 background: transparent;
-                margin: 0 0.5rem 0 0.5rem;
                 border: unset;
                 cursor: pointer;
+                width: 35px;
+                height: 35px;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    background-color: var(--colorBgAlphaHeavy);
+                }
             }
 
             .dialog-input {
@@ -50,15 +60,15 @@
                 color: white;
                 border: unset;
                 width: 20%;
-                margin: 0 0.5rem 0 0.5rem;
+                margin: 0 0.5rem;
                 padding: 0.25rem 0.5rem;
             }
         }
 
         .progress-bar {
             height: 5px;
-            max-width: calc(100% - var(--radius) * 2);
-            margin: 0 calc(var(--radius) / 2);
+            max-width: calc(100% - var(--radius) * 1.5);
+            left: calc(var(--radius)* 0.75);
             background-color: #0080ff;
             border-radius: var(--radius);
             transition: width 0.2s linear;
@@ -87,6 +97,11 @@
             flex: 1;
             overflow: hidden;
             border-radius: var(--radius);
+        }
+
+        &:has(webview[src^="https://clearthis.page/"]) .reader-view-toggle {
+            background-color: var(--colorBgAlphaHeavy);
+            border-color: var(--colorBgDarker);
         }
     }
 }
