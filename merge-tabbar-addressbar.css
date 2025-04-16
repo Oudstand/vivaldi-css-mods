@@ -193,7 +193,7 @@
     }
 
     .mainbar .toolbar-mainbar:not(.toolbar-wrap .toolbar-droptarget) {
-/*         transform: translateY(-90%); */
+        /* transform: translateY(-90%);*/
     }
 
     /** universal */
