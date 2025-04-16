@@ -87,3 +87,13 @@
         }
     }
 }
+
+.fullscreen-listener-enabled #browser:not(.fullscreen) {
+    #webpage-stack {
+        margin: calc(var(--edge-like-border-radius) / 2);
+    }
+
+    #switch {
+        margin-top: calc(var(--edge-like-border-radius) / 2);
+    }
+}

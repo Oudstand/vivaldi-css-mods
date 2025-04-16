@@ -74,6 +74,8 @@
 }
 
 .mainbar {
+    position: absolute;
+
     .toolbar-mainbar {
         border-bottom: none !important;
 
@@ -191,6 +193,11 @@
     }
 
     .mainbar .toolbar-mainbar:not(.toolbar-wrap .toolbar-droptarget) {
-        transform: translateY(-90%);
+/*         transform: translateY(-90%); */
+    }
+
+    /** universal */
+    .mainbar {
+        margin-top: 2px !important;
     }
 }
