@@ -25,7 +25,6 @@
 
 .tab.active {
     font-weight: bold; /** sets the active tabs font weight to bold */
-    overflow: hidden !important;
 
     .tab-header .favicon {
         filter: none !important; /* removes filter of favicon */

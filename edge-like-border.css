@@ -13,9 +13,18 @@
     }
 
     &:not(.fullscreen) {
+        &:is(:has(#panels-container.left.icons), :has(#panels-container > .SlideBar)) #webpage-stack {
+            margin-left: 0;
+        }
+
+        &:is(:has(#panels-container.right.icons), :has(#panels-container > .SlideBar)) #webpage-stack {
+            margin-right: 0;
+        }
+
         #webpage-stack {
             box-shadow: 0 0 0 var(--edge-like-border-radius) var(--colorAccentBg);
 
+            margin-left: calc(var(--edge-like-border-radius) / 2);
             margin-bottom: calc(var(--edge-like-border-radius) / 2);
             margin-right: calc(var(--edge-like-border-radius) / 2);
 
@@ -40,6 +49,8 @@
         }
 
         #panels-container {
+            border-color: var(--colorAccentBg) !important;
+
             &:not(.icons):not(.overlay) .panel-group {
                 border-top-right-radius: var(--edge-like-border-radius);
                 border-bottom-right-radius: var(--edge-like-border-radius);
