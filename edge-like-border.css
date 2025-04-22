@@ -97,7 +97,7 @@
 
 .fullscreen-listener-enabled #browser:not(.fullscreen) {
     #webpage-stack {
-        margin: calc(var(--edge-like-border-radius) / 2);
+        margin: calc(var(--edge-like-border-radius) / 2) !important;
     }
 
     #switch {
