@@ -106,6 +106,16 @@
     }
 }
 
+/**  removes the border below the mainbar */
+.address-top .mainbar {
+    border-bottom: none;
+}
+
+/** removes 1px line between bookmark-bar and switch (container for panels) */
+.bookmark-bar-top .bookmark-bar {
+    border: none;
+}
+
 #browser:not(.is-settingspage) #main {
     position: unset;
 }

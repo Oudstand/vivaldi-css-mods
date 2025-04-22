@@ -28,12 +28,10 @@
     background-color: var(--colorBgLightIntense);
 }
 
-.mainbar .toolbar-mainbar {
-    background: var(--colorAccentBg) !important;
-}
-
-.toolbar-extensions {
-    background-color: var(--colorAccentBg) !important;
+.mainbar {
+    .toolbar-mainbar, .toolbar-extensions  {
+        background: var(--colorAccentBg) !important;
+    }
 }
 
 #header {
