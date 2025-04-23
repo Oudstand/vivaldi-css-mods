@@ -1,6 +1,7 @@
 /**
  * Ribbon theme
  * Forum link: https://forum.vivaldi.net/post/744872
+ * Get background image url: document.querySelector('#browser').style.backgroundImage
  */
 #app {
     --background-image: url("chrome://vivaldi-data/local-image/7PLWZYIFXRZ7S5M4MSELRB6KEBNGUZB3.png");
