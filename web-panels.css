@@ -57,6 +57,27 @@
     }
 }
 
+/** adjust hover effect */
+#switch .button-toolbar {
+    border-top-right-radius: var(--radius) !important;
+    border-bottom-right-radius: var(--radius) !important;
+}
+
+/** add hover effect to speed dials and web panels */
+.dial, #switch .button-toolbar:not(.active) {
+    opacity: 0.66 !important;
+    transition: opacity .25s !important;
+}
+
+.dial:hover, #switch .button-toolbar:hover {
+    opacity: 1 !important;
+}
+
+/** highlight Spotify web panel button when music plays */
+#switch .button-toolbar:has(button[title$="https://open.spotify.com/"]:not([title^="Spotify"])) {
+    opacity: 1 !important;
+}
+
 /* show custom title only #start*/
 /*#switch .workspace-popup svg {
     display: none;

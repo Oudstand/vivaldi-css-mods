@@ -26,22 +26,6 @@
     border-radius: var(--radius) !important;
 }
 
-/** adjust hover effect */
-#switch .button-toolbar {
-    border-top-right-radius: var(--radius) !important;
-    border-bottom-right-radius: var(--radius) !important;
-}
-
-/** add hover effect to speed dials and web panels */
-.dial, #switch .button-toolbar:not(.active) {
-    opacity: 0.66 !important;
-    transition: opacity .25s !important;
-}
-
-.dial:hover, #switch .button-toolbar:hover {
-    opacity: 1 !important;
-}
-
 
 /** adjust calendar */
 .cal-event-header {
