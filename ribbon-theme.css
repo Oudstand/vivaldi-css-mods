@@ -31,7 +31,7 @@
 }
 
 .toolbar-mainbar > .button-toolbar, .toolbar-extensions .button-toolbar {
-    color: var(--colorImageFg, var(--colorAccentFg));
+    color: var(--colorAccentFg);
 }
 
 .bookmark-bar {
@@ -90,7 +90,7 @@
 
 #browser, #header, #tabs-tabbar-container, .tab.active, .mainbar, .bookmark-bar, #main, #webpage-stack, #webpage-stack::before, .SlideBar,
 .panel-group::before, .toolbar-mainbar, #panels-container, #panels-container, .YBDomainButton, .YBDomain::after, .toolbar-extensions {
-    transition: background-color 0.5s, border-color 0.5s, outline 0.5s, box-shadow 0.5s !important;
+    transition: background-color 0.5s, border-color 0.5s, outline 0.5s, box-shadow 0.5s, color 0.5s !important;
 }
 
 footer:has(.toolbar-statusbar) {
