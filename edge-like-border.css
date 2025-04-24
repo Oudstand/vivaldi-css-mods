@@ -44,7 +44,7 @@
                 border-top-right-radius: var(--edge-like-border-radius);
                 border-bottom-right-radius: var(--edge-like-border-radius); */
                 outline: var(--edge-like-border-radius) solid var(--colorAccentBg);
-                z-index: 1;
+                z-index: 4;
                 pointer-events: none;
             }
         }
