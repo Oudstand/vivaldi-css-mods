@@ -30,6 +30,10 @@
     }
 }
 
+.toolbar-mainbar > .button-toolbar, .toolbar-extensions .button-toolbar {
+    color: var(--colorImageFg, var(--colorAccentFg));
+}
+
 .bookmark-bar {
     background: var(--colorAccentBg) !important;
     margin: 0.2rem;
