@@ -6,11 +6,9 @@
 
 #header {
     .vivaldi {
-        height: 34px;
-        width: 34px;
-        margin-top: 3px;
+        height: 35px;
+        width: 35px;
         margin-left: 3px;
-        padding: 0;
         border-radius: var(--radius) !important;
 
         &:hover {
@@ -79,6 +77,10 @@
     .toolbar-mainbar {
         border-bottom: none !important;
 
+        button:hover {
+            background-color: var(--colorAccentBgDark) !important;
+        }
+
         &:not(.toolbar-wrap .toolbar-droptarget) {
             position: absolute;
             transform: translateY(-100%);
@@ -121,18 +123,18 @@
 }
 
 #browser:not(.fullscreen) #header {
-    height: 30px;
+    height: 35px;
     min-height: unset !important;
 }
 
 .density-on {
     &#browser:not(.fullscreen) #header, .vivaldi {
-        height: calc(36px / var(--uiZoomLevel));
+        height: calc(40px / var(--uiZoomLevel));
     }
 
     .toolbar-mainbar {
         &:not(.toolbar-wrap .toolbar-droptarget), .toolbar-extensions {
-            height: 36px !important;
+            height: 35px !important;
         }
     }
 
@@ -143,7 +145,8 @@
     }
 
     #header .vivaldi {
-        margin-top: 6px;
+        /* margin-top: 6px;*/
+        height: 40px;
     }
 
     .window-buttongroup {

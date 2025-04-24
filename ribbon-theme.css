@@ -1,44 +1,21 @@
 /**
  * Ribbon theme
  * Forum link: https://forum.vivaldi.net/post/744872
- * Get background image url: document.querySelector('#browser').style.backgroundImage
  */
-#app {
-    --background-image: url("chrome://vivaldi-data/local-image/7PLWZYIFXRZ7S5M4MSELRB6KEBNGUZB3.png");
-}
-
-#browser {
-    background: var(--colorAccentBg) !important;
-}
-
 #header .vivaldi {
     margin-top: 0.45rem;
-}
-
-#main {
-    background-color: var(--colorAccentBg);
-    padding-top: 0.25rem;
 }
 
 .bookmark-bar-top-off .inner {
     padding-top: calc(var(--edge-like-border-radius) / 4);
 }
 
-#app:not(.fullscreen-listener-enabled) #browser:not(.fullscreen) .inner {
+#app:not(.fullscreen-listener-enabled) #browser:not(.fullscreen) .inner > * {
     padding-top: calc(var(--edge-like-border-radius) / 2);
 }
 
-.startpage {
-    background-image: var(--background-image);
-    background-size: cover;
-}
-
 .window-buttongroup {
-    margin-top: 3px;
-}
-
-#tabs-container {
-    margin-top: 0.25rem;
+    margin-top: 5px;
 }
 
 .UrlBar-AddressField {
@@ -69,10 +46,6 @@
     }
 }
 
-#panels-container {
-    background-color: var(--colorAccentBg) !important;
-}
-
 #browser:not(.fullscreen):is(:has(#panels-container.icons), :has(#panels-container > .SlideBar)) #panels-container {
     &.icons, &.overlay {
         width: 41px !important;
@@ -89,6 +62,10 @@
     background-color: var(--colorBgAlphaBlur) !important;
     margin: 0rem 0.2rem 0.5rem 0.2rem;
     border-radius: var(--radius);
+
+    .button-toolbar:not(.toolbar-spacer):not(.toolbar-divider):not(.toolbar-spacer-flexible):hover {
+        background-color: var(--colorAccentBgAlphaHeavy) !important;
+    }
 }
 
 .panel-collapse-guard {
@@ -107,8 +84,8 @@
     background-color: var(--colorBgAlphaBlur);
 }
 
-#browser, #header, #tabs-tabbar-container, .tab.active, .mainbar, .bookmark-bar, #main, #webpage-stack, #webpage-stack::before,
-.SlideBar, .panel-group::before, .toolbar-mainbar, #panels-container, .YBDomainButton, .YBDomain::after, .toolbar-extensions {
+#browser, #header, #tabs-tabbar-container, .tab.active, .mainbar, .bookmark-bar, #main, #webpage-stack, #webpage-stack::before, .SlideBar,
+.panel-group::before, .toolbar-mainbar, #panels-container, #panels-container, .YBDomainButton, .YBDomain::after, .toolbar-extensions {
     transition: background-color 0.5s, border-color 0.5s, outline 0.5s, box-shadow 0.5s !important;
 }
 
