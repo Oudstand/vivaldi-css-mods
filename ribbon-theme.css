@@ -64,6 +64,7 @@
 
         button {
             border-radius: var(--radius);
+            background-color: transparent;
         }
     }
 }
