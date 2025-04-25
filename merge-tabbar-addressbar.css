@@ -118,7 +118,7 @@
     border: none;
 }
 
-#browser:not(.is-settingspage) #main {
+#main {
     position: unset;
 }
 
@@ -205,12 +205,7 @@
         margin-top: 5px !important;
     }
 
-    .mainbar .toolbar-mainbar:not(.toolbar-wrap .toolbar-droptarget) {
-        /* transform: translateY(-90%);*/
-    }
-
-    /** universal */
-    .mainbar {
-        margin-top: 2px !important;
+    #main {
+        position: absolute;
     }
 }
