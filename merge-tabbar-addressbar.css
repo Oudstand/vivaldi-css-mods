@@ -116,6 +116,8 @@
 /** removes 1px line between bookmark-bar and switch (container for panels) */
 .bookmark-bar-top .bookmark-bar {
     border: none;
+    padding: 0.2rem 0.2rem 0;
+    height: 30px !important;
 }
 
 #main {

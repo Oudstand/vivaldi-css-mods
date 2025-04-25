@@ -1,7 +1,3 @@
-#panels-container {
-    background-color: var(--colorAccentBg);
-}
-
 #switch {
     .toolbar-divider {
         height: 4px !important;

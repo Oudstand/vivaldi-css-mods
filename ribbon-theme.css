@@ -36,8 +36,6 @@
 
 .bookmark-bar {
     background: var(--colorAccentBg) !important;
-    margin: 0.2rem;
-    margin-bottom: 0px;
 
     .observer {
         border-radius: var(--radius) !important;
@@ -60,6 +58,10 @@
     &.icons, &.overlay {
         width: 46px !important;
     }
+}
+
+#panels-container {
+    background-color: var(--colorAccentBg);
 }
 
 #switch {
@@ -89,17 +91,19 @@
 }
 
 #browser, #header, #tabs-tabbar-container, .tab.active, .mainbar, .bookmark-bar, #main, #webpage-stack, #webpage-stack::before, .SlideBar,
-.panel-group::before, .toolbar-mainbar, #panels-container, #panels-container, .YBDomainButton, .YBDomain::after, .toolbar-extensions {
+.panel-group::before, .toolbar-mainbar, #panels-container, #panels-container, .YBDomainButton, .YBDomain::after, footer, .toolbar-extensions {
     transition: background-color 0.5s, border-color 0.5s, outline 0.5s, box-shadow 0.5s, color 0.5s !important;
 }
 
-footer:has(.toolbar-statusbar) {
-    border-radius: var(--radius);
-    margin: 0 0.2rem 0.2rem;
-    background: var(--colorBgAlphaBlur) !important;
 
-    &::after {
-        display: none;
+footer {
+    background-color: var(--colorAccentBg) !important;
+    border: none !important;
+
+    .toolbar-statusbar {
+        border-radius: var(--radius);
+        margin: 0 0.2rem 0.2rem;
+        background: var(--colorBgAlphaBlur) !important;
     }
 }
 
