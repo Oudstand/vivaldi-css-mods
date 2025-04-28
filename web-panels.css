@@ -3,7 +3,7 @@
         height: 4px !important;
         max-width: 20px;
         margin: 5px;
-        border-radius: 10px !important;
+        border-radius: var(--radius) !important;
         background: gray !important;
 
         button {
@@ -53,12 +53,6 @@
     }
 }
 
-/** adjust hover effect */
-#switch .button-toolbar {
-    border-top-right-radius: var(--radius) !important;
-    border-bottom-right-radius: var(--radius) !important;
-}
-
 /** add hover effect to speed dials and web panels */
 .dial, #switch .button-toolbar:not(.active) {
     opacity: 0.66 !important;
@@ -90,7 +84,7 @@
 }
 
 #switch .workspace-popup button:not(:has(.button-title)):after {
-    content: '😒'; /* set custom title for default workspace */
+    content: 'ðŸ˜’'; /* set custom title for default workspace */
 /*    text-align: center;
     width: 100%;
     margin: 0;

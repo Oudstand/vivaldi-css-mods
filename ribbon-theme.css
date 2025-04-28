@@ -2,8 +2,18 @@
  * Ribbon theme
  * Forum link: https://forum.vivaldi.net/post/744872
  */
-#header .vivaldi {
-    margin-top: 0.45rem;
+#browser, #header, #tabs-tabbar-container, .tab.active, .mainbar, .bookmark-bar, #main, #webpage-stack, #webpage-stack::before, .SlideBar,
+.panel-group::before, .toolbar-mainbar, #panels-container, #panels-container, .YBDomainButton, .YBDomain::after, footer, .toolbar-extensions {
+    transition: background-color 0.5s, border-color 0.5s, outline 0.5s, box-shadow 0.5s, color 0.5s !important;
+}
+
+#header {
+    .vivaldi {
+        margin-top: 0.45rem;
+    }
+    .window-buttongroup {
+        margin-top: 5px;
+    }
 }
 
 .bookmark-bar-top-off .inner {
@@ -12,10 +22,6 @@
 
 #app:not(.fullscreen-listener-enabled) #browser:not(.fullscreen) .inner > * {
     padding-top: calc(var(--edge-like-border-radius) / 2);
-}
-
-.window-buttongroup {
-    margin-top: 5px;
 }
 
 .UrlBar-AddressField {
@@ -62,39 +68,48 @@
 
 #panels-container {
     background-color: var(--colorAccentBg);
-}
 
-#switch {
-    background-color: var(--colorBgAlphaBlur) !important;
-    margin: 0rem 0.2rem 0.5rem 0.2rem;
-    border-radius: var(--radius);
+    /** adjust hover effect */
+    &.left #switch .button-toolbar {
+        border-top-right-radius: var(--radius) !important;
+        border-bottom-right-radius: var(--radius) !important;
+    }
 
-    .button-toolbar:not(.toolbar-spacer):not(.toolbar-divider):not(.toolbar-spacer-flexible):hover {
-        background-color: var(--colorAccentBgAlphaHeavy) !important;
+    &.right #switch .button-toolbar {
+        border-top-left-radius: var(--radius) !important;
+        border-bottom-left-radius: var(--radius) !important;
+    }
+
+    #switch {
+        background-color: var(--colorBgAlphaBlur) !important;
+        margin: 0rem 0.2rem 0.5rem 0.2rem;
+        border-radius: var(--radius);
+
+        .button-toolbar:not(.toolbar-spacer):not(.toolbar-divider):not(.toolbar-spacer-flexible):hover {
+            background-color: var(--colorAccentBgAlphaHeavy) !important;
+        }
+
+
+        .button-toolbar > button:hover {
+            background: transparent;
+            color: unset;
+        }
+    }
+
+    .panel-group {
+        left: 41px !important;
+        .panel-collapse-guard {
+            min-width: 100% !important;
+            .panel {
+                background-color: var(--colorBgAlphaBlur) !important;
+                .webpanel-header {
+                    background-color: var(--colorBgAlphaBlur);
+                }
+            }
+        }
+
     }
 }
-
-.panel-collapse-guard {
-    min-width: 100% !important;
-}
-
-.panel {
-    background-color: var(--colorBgAlphaBlur) !important;
-}
-
-.panel-group {
-    left: 41px !important;
-}
-
-.webpanel-header {
-    background-color: var(--colorBgAlphaBlur);
-}
-
-#browser, #header, #tabs-tabbar-container, .tab.active, .mainbar, .bookmark-bar, #main, #webpage-stack, #webpage-stack::before, .SlideBar,
-.panel-group::before, .toolbar-mainbar, #panels-container, #panels-container, .YBDomainButton, .YBDomain::after, footer, .toolbar-extensions {
-    transition: background-color 0.5s, border-color 0.5s, outline 0.5s, box-shadow 0.5s, color 0.5s !important;
-}
-
 
 footer {
     background-color: var(--colorAccentBg) !important;
