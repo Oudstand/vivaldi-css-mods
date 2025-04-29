@@ -4,11 +4,12 @@
 */
 #app:not(.fullscreen-listener-enabled):has(#switch button[title="automate-bookmark-bar"]) .bookmark-bar-top:not(:has(.toolbar-editor)) {
     .bookmark-bar {
-        margin-bottom: -35px;
+        margin-bottom: -36px;
+        height: 33px !important;
         z-index: 4;
         transform: translateY(0);
         transition: transform .45s ease-out .25s, opacity .45s ease-out .25s !important;
-        padding-bottom: 5px;
+        padding-bottom: 3px;
     }
     .bookmark-bar::before {
         content: '';
