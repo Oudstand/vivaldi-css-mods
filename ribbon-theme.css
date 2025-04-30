@@ -30,6 +30,7 @@
 
 .tab.active {
     overflow: hidden !important;
+    height: var(--Height) !important;
 
     .tab-header {
         background-color: var(--colorBgAlphaBlur) !important;
