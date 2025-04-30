@@ -64,7 +64,7 @@
 }
 
 /** highlight Spotify web panel button when music plays */
-#switch .button-toolbar:has(button[title$="https://open.spotify.com/"]:not([title^="Spotify"])) {
+#switch .button-toolbar:has(button[title$="https://open.spotify.com/"][title~="•"]) {
     opacity: 1 !important;
 }
 
