@@ -169,8 +169,12 @@
 
     #pagetitle {
         margin-left: 45vw !important;
-        padding: 5px 0 0 0 !important;
+        padding: 0 !important;
         max-width: calc(55vw - 220px) !important;
+
+        img {
+            display: none;
+        }
 
         span {
             margin: 0 auto;
@@ -180,20 +184,25 @@
 
     .toolbar-mainbar {
         left: 10px !important;
-        padding-bottom: 0.5rem;
+        padding-bottom: 0.25rem;
     }
 
     .UrlBar-AddressField {
         width: 40vw !important;
         background-color: var(--colorBgLightIntense);
+        overflow: hidden;
 
         &:focus-within {
             width: 50vw !important;
         }
     }
 
-    .window-buttongroup button {
-        height: 35px !important;
+    .window-buttongroup {
+        margin-top: 0;
+        button {
+            height: 35px !important;
+            margin-top: 0;
+        }
     }
 
     .toolbar-extensions {
