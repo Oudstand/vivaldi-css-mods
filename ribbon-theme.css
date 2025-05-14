@@ -55,7 +55,7 @@
     }
 }
 
-#browser:not(.fullscreen):is(:has(#panels-container.icons), :has(#panels-container > .SlideBar)) #panels-container {
+#browser:not(.fullscreen):is(:has(#panels-container.icons), :has(#panels-container > .SlideBar)) #panels-container, .fullscreen-listener-enabled #browser:not(.fullscreen) #panels-container {
     &.icons, &.overlay {
         width: 41px !important;
     }

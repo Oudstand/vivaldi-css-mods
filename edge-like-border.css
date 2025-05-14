@@ -100,7 +100,7 @@
         margin: calc(var(--edge-like-border-radius) / 2) !important;
     }
 
-    #switch {
+    #switch, .panel-group {
         margin-top: calc(var(--edge-like-border-radius) / 2);
     }
 }
