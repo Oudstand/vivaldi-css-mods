@@ -102,7 +102,7 @@
         .panel-collapse-guard {
             min-width: 100% !important;
             .panel {
-                background-color: var(--colorBgAlphaBlur) !important;
+/*                background-color: var(--colorBgAlphaBlur) !important;*/
                 .webpanel-header {
                     background-color: var(--colorBgAlphaBlur);
                 }
