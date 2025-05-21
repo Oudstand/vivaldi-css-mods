@@ -11,16 +11,9 @@
         transition: transform .45s ease-out .25s, opacity .45s ease-out .25s !important;
         padding-bottom: 3px;
     }
-    .bookmark-bar::before {
-        content: '';
-        position: absolute;
-        height: 10px;
-        width: 100%;
-        top: 100%;
-    }
     .bookmark-bar:not(:focus-within):not(:hover) {
-        transform: translateY(-120%);
+        transform: translateY(-75%);
         opacity: 0;
-        transition: transform .45s 0s, opacity .45s 0s !important;
+        transition: transform .65s .5s, opacity .65s .5s !important;
     }
 }
