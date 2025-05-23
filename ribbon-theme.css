@@ -103,7 +103,7 @@
             min-width: 100% !important;
             .panel {
 /*                background-color: var(--colorBgAlphaBlur) !important;*/
-                .webpanel-header {
+                .webpanel-header, .webpanel-content {
                     background-color: var(--colorBgAlphaBlur);
                 }
             }
