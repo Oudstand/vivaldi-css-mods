@@ -26,6 +26,7 @@
 
     #tabs-tabbar-container {
         margin-left: calc(26vw + 140px);
+        margin-right: 4rem;
         transition: all 0.75s;
         padding-top: 0 !important;
     }
@@ -33,7 +34,7 @@
 
 #browser:has(.toolbar-mailbar:not(.toolbar-hidden)) #tabs-tabbar-container {
     margin-left: max(25vw, 40rem);
-    margin-right: -5rem;
+    margin-right: 0;
 }
 
 .win.normal {
