@@ -3,17 +3,13 @@
  * Forum link: https://forum.vivaldi.net/topic/96664/merge-tabs-and-address-bar
  * Inspired by: https://forum.vivaldi.net/topic/34187/merge-tabs-and-address-bar
  */
-
 #header {
     .vivaldi {
         height: 35px;
         width: 35px;
         margin-left: 3px;
         border-radius: var(--radius) !important;
-
-        &:hover {
-            background-color: var(--colorAccentBgDark) !important;
-        }
+        margin-top: 2px;
 
         .expand-arrow {
             display: none;
@@ -26,7 +22,6 @@
 
     #tabs-tabbar-container {
         margin-left: calc(26vw + 140px);
-        margin-right: 4rem;
         transition: all 0.75s;
         padding-top: 0 !important;
     }
@@ -40,10 +35,6 @@
 .win.normal {
     .tab-group-indicator {
         top: -2px;
-    }
-
-    #titlebar:not(.tabless) {
-        top: -5px;
     }
 
     .mainbar .toolbar-mainbar {
@@ -79,7 +70,8 @@
         border-bottom: none !important;
 
         button:hover {
-            background-color: var(--colorAccentBgDark) !important;
+            background-color: var(--colorAccentBgAlpha);
+            !important;
         }
 
         &:not(.toolbar-wrap .toolbar-droptarget) {
@@ -88,14 +80,6 @@
             left: 40px !important;
             height: 30px;
             border-radius: 10px;
-        }
-
-        .toolbar-extensions {
-            position: absolute !important;
-            transform: translate(-100%);
-            left: calc(100vw - 180px) !important;
-            height: 30px !important;
-            right: unset !important;
         }
     }
 

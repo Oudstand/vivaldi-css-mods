@@ -7,15 +7,6 @@
     transition: background-color 0.5s, border-color 0.5s, outline 0.5s, box-shadow 0.5s, color 0.5s !important;
 }
 
-#header {
-    .vivaldi {
-        margin-top: 0.45rem;
-    }
-    .window-buttongroup {
-        margin-top: 5px;
-    }
-}
-
 .bookmark-bar-top-off .inner {
     padding-top: calc(var(--edge-like-border-radius) / 4);
 }
