@@ -26,17 +26,37 @@
     height: 33px;
 }
 
-#tabs-container {
+#browser:has(.toolbar-mailbar.toolbar-hidden) #tabs-container {
+    .button-toolbar:has(button[name*="Mail"]), .MailSearchField {
+        display: none;
+
+        & + .toolbar-spacer {
+            display: none;
+        }
+    }
+}
+
+#browser:has(.toolbar-mailbar.toolbar-visible) #tabs-container {
+    .button-toolbar:not(:has(button[name*="Mail"])):not(.toolbar-spacer), .UrlBar-AddressField {
+        display: none;
+
+        & + .toolbar-spacer {
+            display: none;
+        }
+    }
+}
+
+#browser:has(.toolbar-mailbar.toolbar-hidden) #tabs-container {
     & > .toolbar-tabbar-before {
         position: absolute;
         width: 35vw;
         z-index: 3;
 
         .UrlBar-AddressField {
-            width: 28vw;
+            width: 27vw;
             margin-top: 0 !important;
             max-width: unset !important;
-            transition: width 0.2s ease-in-out, height 0.2s ease-in-out, margin-top  0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
+            transition: width 0.2s ease-in-out, height 0.2s ease-in-out, margin-top 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
 
             &:focus-within {
                 width: 40vw;
@@ -49,7 +69,7 @@
     }
 
     .resize {
-        margin-left: 35vw;
+        margin-left: 36vw;
     }
 }
 
