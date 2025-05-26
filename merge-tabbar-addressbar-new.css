@@ -3,6 +3,10 @@
  * Forum link: https://forum.vivaldi.net/topic/96664/merge-tabs-and-address-bar
  * Inspired by: https://forum.vivaldi.net/topic/34187/merge-tabs-and-address-bar
  */
+#app {
+    --address-bar-width: 20vw;
+    --address-bar-width-focused: 40vw
+}
 
 .vivaldi {
     width: 40px;
@@ -46,30 +50,31 @@
     }
 }
 
-#browser:has(.toolbar-mailbar.toolbar-hidden) #tabs-container {
-    & > .toolbar-tabbar-before {
-        position: absolute;
-        width: 35vw;
-        z-index: 3;
+#tabs-container > .toolbar-tabbar-before {
+    position: relative;
+    overflow: visible;
 
-        .UrlBar-AddressField {
-            width: 27vw;
-            margin-top: 0 !important;
-            max-width: unset !important;
-            transition: width 0.2s ease-in-out, height 0.2s ease-in-out, margin-top 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
-
-            &:focus-within {
-                width: 40vw;
-                background-color: var(--colorBg);
-                height: 30px;
-                margin-top: -2px !important;
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-            }
-        }
+    .button-toolbar:has( + .UrlBar-AddressField) {
+        margin-right: calc(var(--address-bar-width) + 1vw);
     }
 
-    .resize {
-        margin-left: 36vw;
+    .UrlBar-AddressField {
+        max-width: unset !important;
+        position: absolute !important;
+        width: var(--address-bar-width);
+        right: 0;
+        margin-right: 0.5rem;
+        z-index: 3;
+        transition: width 0.2s ease-in-out, height 0.2s ease-in-out, margin-top 0.2s ease-in-out, right 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
+
+        &:focus-within {
+            width: var(--address-bar-width-focused);
+            background-color: var(--colorBg);
+            height: 30px;
+            margin-top: -2px !important;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            right: calc(var(--address-bar-width) - var(--address-bar-width-focused));
+        }
     }
 }
 
