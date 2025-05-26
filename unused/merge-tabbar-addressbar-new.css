@@ -1,0 +1,65 @@
+/**
+ * Merge tabbar and addressbar
+ * Forum link: https://forum.vivaldi.net/topic/96664/merge-tabs-and-address-bar
+ * Inspired by: https://forum.vivaldi.net/topic/34187/merge-tabs-and-address-bar
+ */
+
+.vivaldi {
+    width: 40px;
+
+    .expand-arrow {
+        display: none;
+    }
+}
+
+#browser:not(.toolbar-edit-mode) .toolbar-mainbar:empty {
+    display: none;
+}
+
+.address-top .mainbar {
+    border-bottom: none;
+}
+
+.bookmark-bar-top .bookmark-bar {
+    border-bottom: none;
+    padding: 0.25rem 0.2rem 0;
+    height: 33px;
+}
+
+#tabs-container {
+    & > .toolbar-tabbar-before {
+        position: absolute;
+        width: 35vw;
+        z-index: 3;
+
+        .UrlBar-AddressField {
+            width: 28vw;
+            margin-top: 0 !important;
+            max-width: unset !important;
+            transition: width 0.2s ease-in-out, height 0.2s ease-in-out, margin-top  0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
+
+            &:focus-within {
+                width: 40vw;
+                background-color: var(--colorBg);
+                height: 30px;
+                margin-top: -2px !important;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            }
+        }
+    }
+
+    .resize {
+        margin-left: 35vw;
+    }
+}
+
+/* correct positioning for fullscreen mod */
+.fullscreen-listener-enabled {
+    #header .vivaldi {
+        margin-top: 6px !important;
+    }
+
+    #main {
+        position: absolute;
+    }
+}
