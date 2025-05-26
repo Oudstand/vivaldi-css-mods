@@ -11,7 +11,7 @@
     padding-top: calc(var(--edge-like-border-radius) / 4);
 }
 
-#app:not(.fullscreen-listener-enabled) #browser:not(.fullscreen) .inner > * {
+#app:not(.fullscreen-listener-enabled) #browser:not(.fullscreen):not(.popup) .inner > * {
     padding-top: calc(var(--edge-like-border-radius) / 2);
 }
 

@@ -146,9 +146,7 @@
 }
 
 #browser.popup {
-    #header,
-    #titlebar,
-    #pagetitle {
+    #header, #titlebar, #pagetitle {
         height: 35px !important;
     }
 
@@ -191,7 +189,11 @@
     }
 
     .toolbar-extensions {
+        position: absolute !important;
+        transform: translate(-100%);
         left: calc(100vw - 150px) !important;
+        height: 30px !important;
+        right: unset !important;
     }
 }
 
