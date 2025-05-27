@@ -5,7 +5,7 @@
  */
 #app {
     --address-bar-width: 20vw;
-    --address-bar-width-focused: 40vw
+    --address-bar-width-focused: 40vw;
 }
 
 .vivaldi {
@@ -41,7 +41,7 @@
 }
 
 #browser:has(.toolbar-mailbar.toolbar-visible) #tabs-container {
-    .button-toolbar:not(:has(button[name*="Mail"])):not(.toolbar-spacer), .UrlBar-AddressField {
+    .button-toolbar:not(:has(button[name*="Mail"]), :has(button[name*="NewTab"]), .toolbar-spacer), .UrlBar-AddressField {
         display: none;
 
         & + .toolbar-spacer {
