@@ -69,11 +69,12 @@
         transition: width 0.2s ease-in-out, height 0.2s ease-in-out, margin-top 0.2s ease-in-out, right 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
 
         &:focus-within {
-            width: var(--address-bar-width-focused);
-            background-color: var(--colorBg);
             height: 34px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            width: var(--address-bar-width-focused);
             right: calc(var(--address-bar-width) - var(--address-bar-width-focused));
+            margin-top: -3px;
+            background-color: var(--colorBg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
         }
     }
 }
