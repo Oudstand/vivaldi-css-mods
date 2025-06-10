@@ -61,6 +61,7 @@
     .UrlBar-AddressField {
         max-width: unset !important;
         position: absolute !important;
+        height: 30px;
         width: var(--address-bar-width);
         right: 0;
         margin-right: 0.5rem;
