@@ -30,7 +30,7 @@
     height: 33px;
 }
 
-#browser:has(.toolbar-mailbar.toolbar-hidden) #tabs-container {
+#browser:not(:has(.toolbar-mailbar:not(.toolbar-hidden))) #tabs-container {
     .button-toolbar:has(button[name*="Mail"]), .MailSearchField {
         display: none;
 
