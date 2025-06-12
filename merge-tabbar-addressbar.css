@@ -9,6 +9,10 @@
     --address-bar-width-focused: 40vw;
 }
 
+#browser.maximized #header > * {
+    margin-top: 5px;
+}
+
 .vivaldi {
     width: 40px;
 
