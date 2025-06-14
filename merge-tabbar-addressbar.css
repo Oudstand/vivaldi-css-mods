@@ -55,6 +55,10 @@
     }
 }
 
+#tabs-container .toolbar:has(.UrlBar-AddressField) {
+    z-index: 7;
+}
+
 #tabs-container > .toolbar-tabbar-before {
     position: relative;
     overflow: visible;
@@ -71,7 +75,6 @@
         width: max(var(--address-bar-width), var(--address-bar-min-width));
         right: 0;
         margin-right: 0.5rem;
-        z-index: 5;
         transition: width 0.2s ease-in-out, height 0.2s ease-in-out, margin-top 0.2s ease-in-out, right 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
 
         &:focus-within {
