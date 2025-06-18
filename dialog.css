@@ -99,7 +99,7 @@
             border-radius: var(--radius);
         }
 
-        &:has(webview[src^="https://clearthis.page/"]) .reader-view-toggle {
+        &:has(webview[src^="https://app.web-highlights.com/reader/open-website-in-reader-mode"]) .reader-view-toggle {
             background-color: var(--colorBgAlphaHeavy);
             border-color: var(--colorBgDarker);
         }
