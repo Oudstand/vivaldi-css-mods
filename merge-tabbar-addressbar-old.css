@@ -22,6 +22,7 @@
 
     #tabs-tabbar-container {
         margin-left: calc(26vw + 140px);
+        margin-right: 50px;
         transition: all 0.75s;
         padding-top: 0 !important;
     }
@@ -92,6 +93,14 @@
         width: max(25vw, 40rem);
     }
 }
+
+    .toolbar-extensions {
+        position: absolute !important;
+        transform: translate(-100%);
+        left: calc(100vw - 180px) !important;
+        height: 30px !important;
+        right: unset !important;
+    }
 
 /**  removes the border below the mainbar */
 .address-top .mainbar {
@@ -186,14 +195,6 @@
             height: 35px !important;
             margin-top: 0;
         }
-    }
-
-    .toolbar-extensions {
-        position: absolute !important;
-        transform: translate(-100%);
-        left: calc(100vw - 150px) !important;
-        height: 30px !important;
-        right: unset !important;
     }
 }
 
