@@ -7,11 +7,12 @@
     transition: background-color 0.5s, border-color 0.5s, outline 0.5s, box-shadow 0.5s, color 0.5s !important;
 }
 
-.bookmark-bar-top-off .inner {
+.bookmark-bar-top-off .inner > * {
     padding-top: calc(var(--edge-like-border-radius) / 4);
+
 }
 
-#app:not(.fullscreen-listener-enabled) #browser:not(.fullscreen):not(.popup) .inner > * {
+#app:not(.fullscreen-listener-enabled) #browser:not(.fullscreen, .bookmark-bar-top-off):not(.popup) .inner > * {
     padding-top: calc(var(--edge-like-border-radius) / 2);
 }
 
