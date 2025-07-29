@@ -63,31 +63,7 @@
     opacity: 1 !important;
 }
 
-/** highlight Spotify web panel button when music plays */
-#switch .button-toolbar:has(button[title$="https://open.spotify.com/"][title~="•"]) {
+/** highlights web panel that plays music */
+#switch .button-toolbar:has(.panel-audio) {
     opacity: 1 !important;
 }
-
-/* show custom title only #start*/
-/*#switch .workspace-popup svg {
-    display: none;
-}
-
-#switch .workspace-popup .button-toolbar-menu-indicator {
-    display: none;
-}
-
-#switch .workspace-popup .button-title {
-    text-align: center;
-    margin: 0;
-    font-size: 15px;
-}
-
-#switch .workspace-popup button:not(:has(.button-title)):after {
-    content: 'ðŸ˜’'; /* set custom title for default workspace */
-/*    text-align: center;
-    width: 100%;
-    margin: 0;
-    font-size: 15px;
-}
-/* show custom title #stop */
