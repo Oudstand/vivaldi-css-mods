@@ -5,7 +5,7 @@
  */
 #app {
     --address-bar-min-width: 20rem;
-    --address-bar-width: 20vw;
+    --address-bar-width: 25vw;
     --address-bar-width-focused: 40vw;
 }
 
