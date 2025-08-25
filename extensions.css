@@ -1,14 +1,34 @@
-.toolbar-mainbar.toolbar-wrap {
-    /* makes the extensions popup look better */
-    border-radius: 10px;
-    position: absolute !important;
-    background-color: var(--colorAccentBg);
+/**
+* Vertical Extensions Drop-Down
+* Forum link: https://forum.vivaldi.net/topic/96266/vertical-extensions-drop-down-menu
+*/
+.extensionIconPopupMenu {
+    --popupWidth: 200px !important;
+    z-index: 5;
+}
+.extensionIconPopupMenu > .toolbar {
+    max-height: 50vh;
+    overflow: hidden auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+.extensionIconPopupMenu .ExtensionDropdownIcon > button {
+    justify-content: flex-start;
+    padding: 8px 10px;
+}
+.extensionIconPopupMenu .ExtensionDropdownIcon > button::after {
+    content: attr(title);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-button[title="Speed Dial Generator"], button[title="Modern scrollbar"], button[title="Charcoal: Dark Mode for Messenger"],
-button[title="Cookie Notice Blocker"], button[title="Angular DevTools"], button[title="Vivaldi Forum mod"], button[title="Scrollbar of Contents"],
-button[title="datacy"], button[title*="Coupert"], button[title="PayPal Honey"], button[title="Tampermonkey"],
+
+/**
+ * Hide extensions
+ */
+button[title="Speed Dial Generator"], button[title="Modern scrollbar"], button[title="Vivaldi Forum mod"],
+button[title="Scrollbar of Contents"], button[title="datacy"], button[title*="Coupert"], button[title="PayPal Honey"], button[title="Tampermonkey"],
 button[title^="Acrobat"], button[title^="Violentmonkey"], button[title="Custom Scrollbars"] {
-    /* hides the extensions of the given title */
     display: none !important;
 }
