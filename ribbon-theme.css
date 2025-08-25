@@ -20,12 +20,23 @@
     background-color: var(--colorBgAlphaBlur);
 }
 
-.tab.active {
-    overflow: hidden !important;
-    height: var(--Height) !important;
 
-    .tab-header {
+.tab {
+    border-radius: var(--radiusHalf) !important;
+
+    &.active {
+        overflow: hidden !important;
+        height: var(--Height) !important;
         background-color: var(--colorBgAlphaBlur) !important;
+    }
+}
+
+.tab-indicator {
+    background-color: var(--colorHighlightFgAlphaHeavy) !important;
+
+    &.active {
+        background-color: var(--colorHighlightFgAlpha) !important;
+        border-bottom-width: 3px !important;
     }
 }
 
