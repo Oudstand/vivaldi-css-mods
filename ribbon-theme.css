@@ -2,6 +2,11 @@
  * Ribbon theme
  * Forum link: https://forum.vivaldi.net/post/744872
  */
+
+#browser {
+    --ribbon-theme-background-color: var(--colorAccentBgDark); /* --colorBgAlphaBlur */
+}
+
 #browser, #header, #tabs-tabbar-container, .tab.active, .mainbar, .bookmark-bar, #main, #webpage-stack, #webpage-stack::before, .SlideBar,
 .panel-group::before, .toolbar-mainbar, #panels-container, #panels-container, .YBDomainButton, .YBDomain::after, footer, .toolbar-extensions {
     transition: background-color 0.5s, border-color 0.5s, outline 0.5s, box-shadow 0.5s, color 0.5s !important;
@@ -17,7 +22,7 @@
 }
 
 .UrlBar-AddressField {
-    background-color: var(--colorBgAlphaBlur);
+    background-color: var(--ribbon-theme-background-color) !important;
 }
 
 
@@ -27,7 +32,7 @@
     &.active {
         overflow: hidden !important;
         height: var(--Height) !important;
-        background-color: var(--colorBgAlphaBlur) !important;
+        background-color: var(--ribbon-theme-background-color) !important;
     }
 }
 
@@ -49,7 +54,7 @@
 
     .observer {
         border-radius: var(--radius) !important;
-        background: var(--colorBgAlphaBlur) !important;
+        background: var(--ribbon-theme-background-color) !important;
 
         button {
             border-radius: var(--radius);
@@ -85,7 +90,7 @@
     }
 
     #switch {
-        background-color: var(--colorBgAlphaBlur) !important;
+        background-color: var(--ribbon-theme-background-color) !important;
         margin: 0rem 0.2rem 0.5rem 0.2rem;
         border-radius: var(--radius);
 
@@ -105,9 +110,9 @@
         .panel-collapse-guard {
             min-width: 100% !important;
             .panel {
-                /*                background-color: var(--colorBgAlphaBlur) !important;*/
+                /*                background-color: var(--ribbon-theme-background-color) !important;*/
                 .webpanel-header, .webpanel-content {
-                    background-color: var(--colorBgAlphaBlur);
+                    background-color: var(--ribbon-theme-background-color);
                 }
             }
         }
@@ -122,10 +127,10 @@ footer {
     .toolbar-statusbar {
         border-radius: var(--radius);
         margin: 0 0.2rem 0.2rem;
-        background: var(--colorBgAlphaBlur) !important;
+        background: var(--ribbon-theme-background-color) !important;
     }
 }
 
 .find-in-page-wrapper {
-    background-color: var(--colorBgAlphaBlur);
+    background-color: var(--ribbon-theme-background-color);
 }
