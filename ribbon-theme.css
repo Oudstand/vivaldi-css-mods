@@ -4,7 +4,7 @@
  */
 
 #browser {
-    --ribbon-theme-background-color: var(--colorAccentBgDark); /* --colorBgAlphaBlur */
+    --ribbon-theme-background-color: var(--colorBgAlphaBlur); /* --colorAccentBgDark */
 }
 
 #browser, #header, #tabs-tabbar-container, .tab.active, .mainbar, .bookmark-bar, #main, #webpage-stack, #webpage-stack::before, .SlideBar,
