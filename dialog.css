@@ -1,24 +1,18 @@
 @keyframes dialog-tab-animate-progress-bar {
-    0% {
-        left: -100%;
+    from {
+        transform: translateX(-100%);
     }
-    100% {
-        left: 100%;
+    to {
+        transform: translateX(100%);
     }
 }
 
 .dialog-container {
     z-index: 999;
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     background-color: rgba(0, 0, 0, .4);
-    transition-property: background-color;
-    transition-duration: 0.1s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+    transition: background-color .1s ease;
     backdrop-filter: blur(2px);
     border-radius: var(--radius);
     display: flex;
@@ -32,63 +26,70 @@
 
         .options-container {
             display: flex;
-            height: 35px;
-            text-align: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
+            height: 35px;
+            text-align: center;
             color: white;
             z-index: 1160;
+            width: 100%;
+        }
 
-            .options-button {
-                display: flex;
-                background: transparent;
-                border: unset;
-                cursor: pointer;
-                width: 35px;
-                height: 35px;
-                align-items: center;
-                justify-content: center;
+        .options-button {
+            display: flex;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            width: 35px;
+            height: 35px;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 35px;
+        }
 
-                &:hover {
-                    background-color: var(--colorBgAlphaHeavy);
-                }
-            }
+        .options-button:hover {
+            background-color: var(--colorBgAlphaHeavy);
+        }
 
-            .dialog-input {
-                background: var(--colorAccentBgAlpha); 
-                color: white;
-                border: unset;
-                width: 20%;
-                margin: 0 0.5rem;
-                padding: 0.25rem 0.5rem;
-            }
+        .dialog-input {
+            background: var(--colorAccentBgAlpha);
+            color: white;
+            border: none;
+            margin: 0 0.5rem;
+            padding: 0.25rem 0.5rem;
+            flex: 0 0 20%;
+            min-width: 10rem;
         }
 
         .progress-bar {
             height: 5px;
             max-width: calc(100% - var(--radius) * 1.5);
-            left: calc(var(--radius)* 0.75);
+            left: calc(var(--radius) * 0.75);
             background-color: #0080ff;
             border-radius: var(--radius);
             transition: width 0.2s linear;
             overflow: hidden;
             position: relative;
 
-            &[style*="width: 100%"]:after {
+            &.is-complete::after {
                 content: "";
-                width: 50%;
-                height: 100%;
-                background-image: linear-gradient(
-                    to right,
-                    rgba(255, 255, 255, 0.5),
-                    rgba(255, 255, 255, 0.8),
-                    rgba(255, 255, 255, 0.5)
-                );
                 position: absolute;
                 top: 0;
-                left: -100%;
+                left: 0;
+                height: 100%;
+                width: 50%;
+                background-image: linear-gradient(
+                        to right,
+                        rgba(255, 255, 255, 0.5),
+                        rgba(255, 255, 255, 0.8),
+                        rgba(255, 255, 255, 0.5)
+                );
+                transform: translateX(-100%);
                 animation: dialog-tab-animate-progress-bar 1.5s linear infinite;
+                will-change: transform;
             }
         }
 
@@ -99,7 +100,7 @@
             border-radius: var(--radius);
         }
 
-        &:has(webview[src^="https://app.web-highlights.com/reader/open-website-in-reader-mode"]) .reader-view-toggle {
+        &.reader-open .reader-view-toggle {
             background-color: var(--colorBgAlphaHeavy);
             border-color: var(--colorBgDarker);
         }
