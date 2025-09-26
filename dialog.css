@@ -1,25 +1,53 @@
+/* Open from (tx0, ty0), scale s0 -> 1 */
+@keyframes card-open-anchored {
+    from { opacity: 0; transform: translate(var(--tx0, 0px), var(--ty0, 0px)) scale(var(--s0, 0.1)); }
+    to   { opacity: 1; transform: translate(0px, 0px) scale(1); }
+}
+
+/* Close to (tx0, ty0), scale 1 -> s0 */
+@keyframes card-close-anchored {
+    from { opacity: 1; transform: translate(0px, 0px) scale(1); }
+    to   { opacity: 0; transform: translate(var(--tx0, 0px), var(--ty0, 0px)) scale(var(--s0, 0.1)); }
+}
+
 @keyframes dialog-tab-animate-progress-bar {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(100%);
-    }
+    from { transform: translateX(-100%); }
+    to   { transform: translateX(100%); }
 }
 
 .dialog-container {
     z-index: 999;
     position: fixed;
     inset: 0;
-    background-color: rgba(0, 0, 0, .4);
-    transition: background-color .1s ease;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 220ms ease;
     backdrop-filter: blur(2px);
     border-radius: var(--radius);
     display: flex;
     justify-content: center;
     align-items: center;
 
+    &.is-open { background-color: rgba(0, 0, 0, .4); }
+    &.is-leave { pointer-events: none; backdrop-filter: none; }
+
+    /* prevent progress bar from flashing before the overlay is open */
+    &:not(.is-open) .progress-bar { visibility: hidden; }
+
     .dialog-tab {
+        /* top-left origin so our translate math is exact */
+        transform-origin: 0 0;
+        will-change: transform, opacity;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        contain: paint;
+
+        &.animating-open  {
+            animation: card-open-anchored 360ms cubic-bezier(.16,1,.3,1) both;
+        }
+        &.animating-close {
+            animation: card-close-anchored 300ms cubic-bezier(.8, .0, .2, 1) both;
+        }
+
         position: relative;
         display: flex;
         flex-direction: column;
@@ -50,9 +78,7 @@
             flex: 0 0 35px;
         }
 
-        .options-button:hover {
-            background-color: var(--colorBgAlphaHeavy);
-        }
+        .options-button:hover { background-color: var(--colorBgAlphaHeavy); }
 
         .dialog-input {
             background: var(--colorAccentBgAlpha);
