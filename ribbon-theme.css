@@ -134,3 +134,15 @@ footer {
 .find-in-page-wrapper {
     background-color: var(--ribbon-theme-background-color);
 }
+
+.maximized {
+    .tab-group-indicator {
+        top: -5px !important;
+        padding-left: calc(var(--radiusHalf) + var(--densityGap)) !important;
+        padding-right: calc(var(--radiusHalf) + var(--densityGap)) !important;
+    }
+
+    .tab-indicator {
+        border-bottom-width: 6px !important;
+    }
+}
