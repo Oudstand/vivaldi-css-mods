@@ -21,8 +21,8 @@
     }
 }
 
-#browser:not(.toolbar-edit-mode) .toolbar-mainbar:empty {
-    display: none;
+#browser.toolbar-edit-mode .toolbar-mainbar:empty {
+    height: 34px;
 }
 
 .address-top .mainbar {
