@@ -3,6 +3,15 @@
  * Forum link: https://forum.vivaldi.net/topic/96664/merge-tabs-and-address-bar
  * Inspired by: https://forum.vivaldi.net/topic/34187/merge-tabs-and-address-bar
  */
+
+ /** fix for https://vivaldi.com/blog/desktop/auto-hide-tabs-drag-and-drop-tiling-vivaldi-browser-snapshot-3877-3/ */
+#browser:not(.toolbar-edit-mode) #main .mainbar {
+    height: 0 !important;
+}
+.window-buttongroup.on-mainbar {
+    display: none !important;
+}
+
 #app {
     --address-bar-min-width: 20rem;
     --address-bar-width: 25vw;
