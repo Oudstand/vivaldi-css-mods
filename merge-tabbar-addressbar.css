@@ -5,8 +5,9 @@
  */
 
  /** fix for https://vivaldi.com/blog/desktop/auto-hide-tabs-drag-and-drop-tiling-vivaldi-browser-snapshot-3877-3/ */
-#browser:not(.toolbar-edit-mode) #main .mainbar {
-    height: 0 !important;
+#browser:not(.toolbar-edit-mode) #main .toolbar-mainbar {
+    min-height: 0;
+    height: 0;
 }
 .window-buttongroup.on-mainbar {
     display: none !important;
